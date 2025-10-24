@@ -1,0 +1,108 @@
+
+# ----------------------------------------------------------
+# GENERAL SYSTEM FILES (macOS / Windows / temp)
+# ----------------------------------------------------------
+.DS_Store
+__MACOSX/
+Thumbs.db
+desktop.ini
+Icon?
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.cache
+*.zip
+*.tar
+*.gz
+*.7z
+
+# ----------------------------------------------------------
+# EDITOR / IDE CONFIG
+# ----------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# ----------------------------------------------------------
+# XAMPP / LOCAL SERVER
+# ----------------------------------------------------------
+# On Mac: XAMPP is under /Applications/XAMPP/xamppfiles/
+# On Windows: C:\xampp\
+xamppfiles/
+htdocs/
+tmp/
+logs/
+error_log
+
+# ----------------------------------------------------------
+# BACKEND (PHP)
+# ----------------------------------------------------------
+vendor/
+composer.phar
+composer.lock
+
+# Sensitive connection or environment configs
+config/connect-db.php
+config/*.env
+.env
+.env.*
+
+# PHP temporary/session/cache files
+*.pid
+*.seed
+*.coverage
+*.session
+.cache/
+sessions/
+uploads/tmp/
+uploads/cache/
+
+# ----------------------------------------------------------
+# DATABASE / SQL (MySQL)
+# ----------------------------------------------------------
+# Keep schema & demo data files, ignore heavy dumps/backups
+db/export_backup.sql
+*.sql~
+*.db
+*.db-journal
+*.sqlite
+
+# ----------------------------------------------------------
+# FRONTEND (JS / CSS / HTML)
+# ----------------------------------------------------------
+node_modules/
+dist/
+build/
+coverage/
+*.map
+
+# ----------------------------------------------------------
+# SECURITY / DEPLOYMENT
+# ----------------------------------------------------------
+*.pem
+*.key
+*.crt
+*.csr
+# SSH / SFTP configs 
+.ssh/
+.deploy/
+
+# ----------------------------------------------------------
+#  MISC BACKUPS
+# ----------------------------------------------------------
+*.old
+*.orig
+*.rej
+*~
+*.bak
+*.backup
+
+# ----------------------------------------------------------
+# SAFE FILES TO KEEP TRACKED
+# ----------------------------------------------------------
+!config/connect-db.example.php
+!db/create_tables.sql
+!db/insert_data.sql
+!db/advanced.sql
