@@ -122,3 +122,7 @@ BEGIN
 
 END$$
 DELIMITER  ; 	
+
+
+—----advanced SQL technique—------
+
