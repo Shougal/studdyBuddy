@@ -116,29 +116,6 @@ INSERT INTO StudyGroup (owner_computingID, term, mnemonic_num, description) VALU
 ('cde9','Fall2025','CS1010','Spreadsheet project tips'),
 ('fgh0','Spring2025','CS2130','C programming support');
 
--- JOINS
-INSERT INTO Joins VALUES
-('abc1',1),
-('xyz2',1),
-('def3',1),
-('jkl4',2),
-('mno5',3),
-('pqr6',3),
-('stu7',4),
-('vwx8',4),
-('yza9',5),
-('bcd0',5),
-('efg1',6),
-('hij2',6),
-('klm3',7),
-('nop4',8),
-('qrs5',9),
-('tuv6',10),
-('wxy7',11),
-('zab8',12),
-('cde9',13),
-('fgh0',14);
-
 
 -- LOCATIONS
 INSERT INTO Location (building, room_number, capacity) VALUES
@@ -188,6 +165,28 @@ INSERT INTO Session VALUES
 ('2025-11-19', '17:00', '18:30', 'Mechanical Engineering', '339', 19),
 ('2025-11-20', '18:00', '19:30', 'Mechanical Engineering', '341', 20);
 
+-- JOINS
+INSERT INTO Joins VALUES
+('abc1',1),
+('xyz2',1),
+('def3',1),
+('jkl4',2),
+('mno5',3),
+('pqr6',3),
+('stu7',4),
+('vwx8',4),
+('yza9',5),
+('bcd0',5),
+('efg1',6),
+('hij2',6),
+('klm3',7),
+('nop4',8),
+('qrs5',9),
+('tuv6',10),
+('wxy7',11),
+('zab8',12),
+('cde9',13),
+('fgh0',14);
 
 -- SURVEY QUESTIONS
 INSERT INTO Survey_Questions (question, type_is, is_active) VALUES
