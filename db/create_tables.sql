@@ -98,7 +98,7 @@ CREATE TRIGGER capacity_check
 BEFORE INSERT ON Joins
 FOR EACH ROW 
 BEGIN 
-—condition—--
+--condition
 	DECLARE max_capacity INT; 
 	DECLARE current_members INT; 
 	
@@ -116,8 +116,33 @@ BEGIN
 	--raise error if capacity has been exceeded—-
 	IF current_members >= max_capacity THEN 
 	SIGNAL SQLSTATE '45000' 
-    SET MESSAGE_TEXT = "Error: Location capacity has been exceeded. Cannot join study group"
+    SET MESSAGE_TEXT = "Error: Location capacity has been exceeded. Cannot join study group";
     END IF; 
 
 END$$
 DELIMITER  ; 	
+
+CREATE TRIGGER prevent_overlap
+BEFORE INSERT ON Session
+FOR EACH ROW 
+BEGIN
+    -- check for conflicts in the same room on the same date 
+    IF EXISTS (
+        SELECT 1 
+        FROM SESSION 
+        WHERE building = NEW.building 
+        AND room_number = NEW.room_number 
+        AND date = NEW.date 
+    --overlap occurs if the new session starts before the existing one ends,
+    -- AND the new session ends before the existing one starts.
+        AND(NEW.start_time < end_time AND NEW.end_time > start_time)
+    )
+    THEN 
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Room already booked during that time'; 
+    END IF; 
+END$$
+
+DELIMITER ; 
+
+
