@@ -189,17 +189,18 @@ INSERT INTO Session VALUES
 
 
 -- SURVEY QUESTIONS
-INSERT INTO Survey_Questions VALUES
+INSERT INTO Survey_Questions (questionID, question, type_is, is_active) VALUES
 (1,'How effective was the study session?','rating',TRUE),
 (2,'Would you join again?','yes/no',TRUE),
 (3,'Was the time convenient for you?','yes/no',TRUE);
 
 -- SURVEY FEEDBACK
-INSERT INTO Survey_Feedback VALUES
+INSERT INTO Survey_Feedback (questionID, computingID, groupID, response) VALUES
 (1,'abc1',1,'5/5 - super productive'),
 (2,'xyz2',1,'yes'),
 (3,'xyz2',2,'no - too late in the day'),
 (1,'def3',3,'4/5 - helpful but long');
+
 
 
 
