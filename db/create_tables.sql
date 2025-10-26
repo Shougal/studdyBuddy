@@ -1,5 +1,5 @@
--- 1. User table
-CREATE TABLE User (
+-- 1.   table
+CREATE TABLE `User` (
     computingID VARCHAR(10) PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     year INT,
@@ -26,18 +26,18 @@ CREATE TABLE Enrollment (
     term VARCHAR(10),
     mnemonic_num VARCHAR(10),
     PRIMARY KEY (computingID, mnemonic_num, term),
-    FOREIGN KEY (computingID) REFERENCES User(computingID),
+    FOREIGN KEY (computingID) REFERENCES `User`(computingID),
     FOREIGN KEY (term, mnemonic_num) REFERENCES Course_Offerings(term, mnemonic_num)
 );
 
 -- 5. StudyGroup table
 CREATE TABLE StudyGroup (
-    groupID INT PRIMARY KEY,
+    groupID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     owner_computingID VARCHAR(10) NOT NULL,
     term VARCHAR(10) NOT NULL,
     mnemonic_num VARCHAR(10) NOT NULL,
     description TEXT,
-    FOREIGN KEY (owner_computingID) REFERENCES User(computingID),
+    FOREIGN KEY (owner_computingID) REFERENCES `User`(computingID),
     FOREIGN KEY (term, mnemonic_num) REFERENCES Course_Offerings(term, mnemonic_num)
 );
 
@@ -46,7 +46,7 @@ CREATE TABLE Joins (
     computingID VARCHAR(10),
     groupID INT,
     PRIMARY KEY (computingID, groupID),
-    FOREIGN KEY (computingID) REFERENCES User(computingID),
+    FOREIGN KEY (computingID) REFERENCES `User`(computingID),
     FOREIGN KEY (groupID) REFERENCES StudyGroup(groupID)
 );
 
@@ -87,10 +87,10 @@ CREATE TABLE Survey_Feedback (
     questionID INT,
     computingID VARCHAR(10),
     groupID INT,
-    response TEXT NOT NULL, // resolved
+    response TEXT NOT NULL, -- resolved
     PRIMARY KEY (questionID, computingID, groupID),
     FOREIGN KEY (questionID) REFERENCES Survey_Questions(questionID),
-    FOREIGN KEY (computingID) REFERENCES User(computingID),
+    FOREIGN KEY (computingID) REFERENCES `User`(computingID),
     FOREIGN KEY (groupID) REFERENCES StudyGroup(groupID)
 );
 —----advanced SQL technique—------
@@ -122,7 +122,9 @@ BEGIN
 
 END$$
 DELIMITER  ; 	
+
 --advanced trigger
+DELIMITER $$
 CREATE TRIGGER prevent_overlap
 BEFORE INSERT ON Session
 FOR EACH ROW 
