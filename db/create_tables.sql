@@ -67,6 +67,7 @@ CREATE TABLE Session (
     room_number VARCHAR(10),
     groupID INT NOT NULL UNIQUE,
     -----advanced sql constraint-------
+	CONSTRAINT chk_end_after_start
     CHECK (end_time > start_time),
     PRIMARY KEY (date, start_time, end_time, building, room_number),
     FOREIGN KEY (building, room_number) REFERENCES Location(building, room_number),
