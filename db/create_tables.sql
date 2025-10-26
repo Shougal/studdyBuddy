@@ -23,8 +23,8 @@ CREATE TABLE Course_Offerings (
 -- 4. Enrollment table
 CREATE TABLE Enrollment (
     computingID VARCHAR(10),
-    term VARCHAR(10),
     mnemonic_num VARCHAR(10),
+    term VARCHAR(10),
     PRIMARY KEY (computingID, mnemonic_num, term),
     FOREIGN KEY (computingID) REFERENCES User(computingID),
     FOREIGN KEY (term, mnemonic_num) REFERENCES Course_Offerings(term, mnemonic_num)
@@ -32,7 +32,7 @@ CREATE TABLE Enrollment (
 
 -- 5. StudyGroup table
 CREATE TABLE StudyGroup (
-    groupID INT PRIMARY KEY,
+    groupID INT PRIMARY KEY AUTO_INCREMENT,
     owner_computingID VARCHAR(10) NOT NULL,
     term VARCHAR(10) NOT NULL,
     mnemonic_num VARCHAR(10) NOT NULL,
@@ -143,4 +143,16 @@ BEGIN
     END IF; 
 END;
 
+-- A user may only join a group if that group has a scheduled meeting time/location defined in the Session table 
+CREATE TRIGGER trg_joins_requires_session
+BEFORE INSERT ON Joins
+FOR EACH ROW
+BEGIN
+  IF NOT EXISTS (
+       SELECT 1 FROM Session s WHERE s.groupID = NEW.groupID
+     ) THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Cannot join: this study group has no scheduled session yet.';
+  END IF;
+END;
 
