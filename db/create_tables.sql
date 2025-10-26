@@ -54,7 +54,7 @@ CREATE TABLE Joins (
 CREATE TABLE Location (
     building VARCHAR(50),
     room_number VARCHAR(10),
-    capacity INT,
+    capacity INT NOT NULL, --resolved
     PRIMARY KEY (building, room_number)
 );
 
@@ -76,7 +76,7 @@ CREATE TABLE Session (
 
 -- 9. Survey_Questions table
 CREATE TABLE Survey_Questions (
-    questionID INT PRIMARY KEY,
+    questionID INT PRIMARY KEY AUTO_INCREMENT, --auto_increment
     question TEXT NOT NULL,
     type_is VARCHAR(100),
     is_active BOOLEAN
@@ -87,7 +87,7 @@ CREATE TABLE Survey_Feedback (
     questionID INT,
     computingID VARCHAR(10),
     groupID INT,
-    response TEXT,
+    response TEXT NOT NULL, // resolved
     PRIMARY KEY (questionID, computingID, groupID),
     FOREIGN KEY (questionID) REFERENCES Survey_Questions(questionID),
     FOREIGN KEY (computingID) REFERENCES User(computingID),
@@ -122,7 +122,7 @@ BEGIN
 
 END$$
 DELIMITER  ; 	
-
+--advanced trigger
 CREATE TRIGGER prevent_overlap
 BEFORE INSERT ON Session
 FOR EACH ROW 
