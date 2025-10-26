@@ -23,8 +23,8 @@ CREATE TABLE Course_Offerings (
 -- 4. Enrollment table
 CREATE TABLE Enrollment (
     computingID VARCHAR(10),
-    term VARCHAR(10),
     mnemonic_num VARCHAR(10),
+    term VARCHAR(10),
     PRIMARY KEY (computingID, mnemonic_num, term),
     FOREIGN KEY (computingID) REFERENCES User(computingID),
     FOREIGN KEY (term, mnemonic_num) REFERENCES Course_Offerings(term, mnemonic_num)
