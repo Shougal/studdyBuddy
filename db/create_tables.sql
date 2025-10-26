@@ -32,7 +32,7 @@ CREATE TABLE Enrollment (
 
 -- 5. StudyGroup table
 CREATE TABLE StudyGroup (
-    groupID INT PRIMARY KEY,
+    groupID INT PRIMARY KEY AUTO_INCREMENT,
     owner_computingID VARCHAR(10) NOT NULL,
     term VARCHAR(10) NOT NULL,
     mnemonic_num VARCHAR(10) NOT NULL,
