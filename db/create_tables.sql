@@ -1,21 +1,3 @@
--- Disable foreign key checks temporarily
-SET FOREIGN_KEY_CHECKS = 0;
-
--- Drop tables in reverse dependency order
-DROP TABLE IF EXISTS Survey_Feedback;
-DROP TABLE IF EXISTS Survey_Questions;
-DROP TABLE IF EXISTS Session;
-DROP TABLE IF EXISTS Joins;
-DROP TABLE IF EXISTS StudyGroup;
-DROP TABLE IF EXISTS Enrollment;
-DROP TABLE IF EXISTS Course_Offerings;
-DROP TABLE IF EXISTS Course;
-DROP TABLE IF EXISTS Location;
-DROP TABLE IF EXISTS User;
-
--- Re-enable foreign key checks
-SET FOREIGN_KEY_CHECKS = 1;
-
 -- 1. User table
 CREATE TABLE User (
     computingID VARCHAR(10) PRIMARY KEY,
