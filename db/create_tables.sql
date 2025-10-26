@@ -143,4 +143,16 @@ BEGIN
     END IF; 
 END;
 
+-- A user may only join a group if that group has a scheduled meeting time/location defined in the Session table 
+CREATE TRIGGER trg_joins_requires_session
+BEFORE INSERT ON Joins
+FOR EACH ROW
+BEGIN
+  IF NOT EXISTS (
+       SELECT 1 FROM Session s WHERE s.groupID = NEW.groupID
+     ) THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Cannot join: this study group has no scheduled session yet.';
+  END IF;
+END;
 
