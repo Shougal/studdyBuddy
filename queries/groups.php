@@ -29,7 +29,7 @@ function db_get_group(int $groupID): ?array {
                  (SELECT COUNT(*) FROM Joins jj WHERE jj.groupID = g.groupID) AS members
           FROM StudyGroup g
           JOIN `User` u  ON u.computingID = g.owner_computingID
-          LEFT JOIN Session s ON s.groupID = g.groupID
+          LEFT JOIN `Session` s ON s.groupID = g.groupID
           WHERE g.groupID = ?";
   $st = $db->prepare($sql);
   $st->execute([$groupID]);
@@ -56,7 +56,7 @@ function db_search_groups(string $q = '', string $termLike = '%', int $limit = 2
           FROM StudyGroup g
           JOIN Course c ON c.mnemonic_num = g.mnemonic_num
           JOIN `User` u ON u.computingID = g.owner_computingID
-          LEFT JOIN Session s ON s.groupID = g.groupID
+          LEFT JOIN `Session` s ON s.groupID = g.groupID
           LEFT JOIN Joins j   ON j.groupID = g.groupID
           WHERE g.term LIKE ?
             AND (c.mnemonic_num LIKE ? OR g.description LIKE ?)

@@ -59,7 +59,7 @@ function db_my_groups(string $computingID): array {
           FROM Joins j
           JOIN StudyGroup g ON g.groupID = j.groupID
           JOIN Course c     ON c.mnemonic_num = g.mnemonic_num
-          LEFT JOIN Session s ON s.groupID = g.groupID
+          LEFT JOIN `Session` s ON s.groupID = g.groupID
           WHERE j.computingID = ?
           ORDER BY s.date, s.start_time";
   $st = $db->prepare($sql);

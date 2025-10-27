@@ -25,7 +25,7 @@ function db_find_free_rooms(string $date, string $start, string $end): array {
           FROM Location l
           WHERE NOT EXISTS (
             SELECT 1
-            FROM Session s
+            FROM `Session` s
             WHERE s.building = l.building
               AND s.room_number = l.room_number
               AND s.date = ?

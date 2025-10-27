@@ -34,7 +34,7 @@ function db_create_session(int $groupID, string $date, string $start, string $en
 function db_reschedule_session(int $groupID, string $date, string $start, string $end, string $building, string $room): array {
   global $db;
   try {
-    $sql = "UPDATE Session
+    $sql = "UPDATE `Session`
             SET date = ?, start_time = ?, end_time = ?, building = ?, room_number = ?
             WHERE groupID = ?";
     $db->prepare($sql)->execute([$date, $start, $end, $building, $room, $groupID]);
@@ -51,7 +51,7 @@ function db_reschedule_session(int $groupID, string $date, string $start, string
  */
 function db_get_session_by_group(int $groupID): ?array {
   global $db;
-  $st = $db->prepare("SELECT date, start_time, end_time, building, room_number FROM Session WHERE groupID = ?");
+  $st = $db->prepare("SELECT date, start_time, end_time, building, room_number FROM `Session` WHERE groupID = ?");
   $st->execute([$groupID]);
   $row = $st->fetch();
   return $row ?: null;
