@@ -92,6 +92,47 @@ INSERT INTO Enrollment VALUES
 ('zab8','CS4610','Spring2025'),
 ('cde9','CS1010','Fall2025'),
 ('fgh0','CS2130','Spring2025');
+('xyz2','CS4750','Spring2025'),
+('def3','CS4750','Spring2025'),
+('mno5','CS4750','Spring2025'),
+('stu7','CS4750','Spring2025'),
+('vwx8','CS4750','Spring2025'),
+('abc1','CS3240','Spring2025'),
+('def3','CS3240','Spring2025'),
+('jkl4','CS3240','Spring2025'),
+('pqr6','CS3240','Spring2025'),
+('qrs5','CS3240','Spring2025'),
+('abc1','CS3710','Fall2025'),
+('xyz2','CS3710','Fall2025'),
+('mno5','CS3710','Fall2025'),
+('vwx8','CS3710','Fall2025'),
+('yza9','CS3710','Fall2025'),
+('def3','CS2100','Fall2025'),
+('pqr6','CS2100','Fall2025'),
+('stu7','CS2100','Fall2025'),
+('klm3','CS2100','Fall2025'),
+('nop4','CS2100','Fall2025'),
+('abc1','CS2120','Fall2025'),
+('xyz2','CS2120','Fall2025'),
+('def3','CS2120','Fall2025'),
+('bcd0','CS2120','Fall2025'),
+('efg1','CS2120','Fall2025'),
+('stu7','CS3130','Fall2025'),
+('vwx8','CS3130','Fall2025'),
+('yza9','CS3130','Fall2025'),
+('bcd0','CS3130','Fall2025'),
+('efg1','CS3130','Fall2025'),
+('hij2','CS3140','Spring2025'),
+('klm3','CS3140','Spring2025'),
+('nop4','CS3140','Spring2025'),
+('qrs5','CS3140','Spring2025'),
+('tuv6','CS3140','Spring2025'),
+('abc1','CS3120','Fall2025'),
+('xyz2','CS3120','Fall2025'),
+('def3','CS3120','Fall2025'),
+('pqr6','CS3120','Fall2025'),
+('stu7','CS3120','Fall2025');
+
 
 -- STUDY GROUPS
 INSERT INTO StudyGroup (owner_computingID, term, mnemonic_num, description) VALUES
@@ -277,6 +318,7 @@ INSERT INTO Joins VALUES
 ('vwx8',18),
 ('yza9',19),
 ('bcd0',20);
+
 
 
 -- SURVEY QUESTIONS
