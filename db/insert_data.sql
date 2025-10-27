@@ -143,7 +143,7 @@ INSERT INTO Location (building, room_number, capacity) VALUES
 
 
 -- SESSIONS
-INSERT INTO Session VALUES
+INSERT INTO `Session` VALUES
 ('2025-11-01', '17:00', '18:30', 'Rice Hall', '011', 1),
 ('2025-11-02', '16:00', '17:30', 'Rice Hall', '032', 2),
 ('2025-11-03', '18:00', '19:00', 'Rice Hall', '130', 3),

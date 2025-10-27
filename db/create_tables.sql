@@ -59,7 +59,7 @@ CREATE TABLE Location (
 );
 
 -- 8. Session table
-CREATE TABLE Session (
+CREATE TABLE `Session` (
     date DATE,
     start_time TIME,
     end_time TIME,
@@ -105,7 +105,7 @@ BEGIN
 	-- find max capacity for location used by new_group 
 	SELECT l.capacity INTO max_capacity
 	FROM Location l 
-	INNER JOIN Session s ON l.building = s.building AND l.room_number = s.room_number
+	INNER JOIN `Session` s ON l.building = s.building AND l.room_number = s.room_number
 	WHERE s.groupID = NEW.groupID;
 
     -- count number of members present in the JOINS table—-
@@ -123,13 +123,13 @@ END;
 
 -- advanced trigger
 CREATE TRIGGER prevent_overlap
-BEFORE INSERT ON Session
+BEFORE INSERT ON `Session`
 FOR EACH ROW 
 BEGIN
     -- check for conflicts in the same room on the same date 
     IF EXISTS (
         SELECT 1 
-        FROM SESSION 
+        FROM `Session` 
         WHERE building = NEW.building 
         AND room_number = NEW.room_number 
         AND date = NEW.date 
@@ -149,7 +149,7 @@ BEFORE INSERT ON Joins
 FOR EACH ROW
 BEGIN
   IF NOT EXISTS (
-       SELECT 1 FROM Session s WHERE s.groupID = NEW.groupID
+       SELECT 1 FROM `Session` s WHERE s.groupID = NEW.groupID
      ) THEN
     SIGNAL SQLSTATE '45000'
       SET MESSAGE_TEXT = 'Cannot join: this study group has no scheduled session yet.';
