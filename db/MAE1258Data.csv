@@ -1,0 +1,235 @@
+ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor,Days,Room,Title,Topic,Status,Enrollment,EnrollmentLimit,Waitlist
+20569,MAE,1501,001,Lecture,"1","Caroline Crockett","Fr 12:00pm - 12:50pm","","Special Topics in Mechanical & Aerospace Engineering","T-6 Flight Simulator Training",Closed,12,12,0
+20605,MAE,1501,002,Lecture,"1","Caroline Crockett","Fr 1:00pm - 1:50pm","","Special Topics in Mechanical & Aerospace Engineering","T-6 Flight Simulator Training",Open,7,12,0
+15655,MAE,2020,001,Lecture,"2","Gavin Garner","TuTh 2:00pm - 3:15pm","","Introduction to Mechanical Engineering","",Open,168,170,0
+15656,MAE,2030,001,Lecture,"2","Ethan Scott","TuTh 9:30am - 10:45am","","Introduction to Aerospace Engineering","",Open,73,90,0
+15657,MAE,2040,001,WKS,"1","Dwight Dart","Tu 4:00pm - 4:50pm","","Computer Aided Design","",Open,142,150,0
+16189,MAE,2100,001,Lecture,"3","David Brown","Mo 6:00pm - 8:00pm","","Thermodynamics","",Open,87,100,0
+14704,MAE,2300,001,Lecture,"3","Peter Griffiths","MoWeFr 9:00am - 9:50am","","Statics","",Open,110,115,0
+15260,MAE,2300,002,Lecture,"3","Leo Liu","MoWe 2:00pm - 3:15pm","","Statics","",Closed,55,35,0
+19628,MAE,2310,001,Lecture,"3","Natasha Smith","MoWe 2:00pm - 3:15pm","","Strength of Materials","",Open,38,45,0
+15633,MAE,2320,001,Lecture,"3","Qing Chang","TuTh 11:00am - 12:15pm","","Dynamics","",Open,21,30,0
+16192,MAE,3210,001,Lecture,"3","Eric Loth","TuTh 11:00am - 12:15pm","","Fluid Mechanics","",Open,93,100,0
+20488,MAE,3210,002,Lecture,"3","Daniel Quinn","TuTh 11:00am - 12:15pm","","Fluid Mechanics","",Open,62,80,0
+15409,MAE,3230,001,Lecture,"2","Peter Griffiths","Mo 12:00pm - 12:50pm","","Thermal Fluids Laboratory","",Open,76,150,0
+16252,MAE,3230,002,Lecture,"2","Peter Griffiths","TBA","","Thermal Fluids Laboratory","",Open,99,100,0
+15410,MAE,3230,101,Laboratory,"0","Peter Griffiths","Tu 2:00pm - 4:00pm","","Thermal Fluids Laboratory","",Closed,21,21,0
+15411,MAE,3230,102,Laboratory,"0","Peter Griffiths","Th 2:00pm - 4:00pm","","Thermal Fluids Laboratory","",Closed,21,21,0
+15412,MAE,3230,103,Laboratory,"0","Peter Griffiths","Tu 4:00pm - 6:00pm","","Thermal Fluids Laboratory","",Open,20,21,0
+15413,MAE,3230,104,Laboratory,"0","Peter Griffiths","We 4:00pm - 6:00pm","","Thermal Fluids Laboratory","",Closed,21,21,0
+15414,MAE,3230,105,Laboratory,"0","Peter Griffiths","Th 4:00pm - 6:00pm","","Thermal Fluids Laboratory","",Open,20,21,0
+15415,MAE,3230,106,Laboratory,"0","Peter Griffiths","We 2:00pm - 4:00pm","","Thermal Fluids Laboratory","",Open,20,21,0
+15416,MAE,3230,107,Laboratory,"0","Peter Griffiths","We 6:00pm - 8:00pm","","Thermal Fluids Laboratory","",Open,12,21,0
+16003,MAE,3230,108,Laboratory,"0","Peter Griffiths","Mo 2:00pm - 4:00pm","","Thermal Fluids Laboratory","",Closed,21,21,0
+21165,MAE,3230,109,Laboratory,"0","Peter Griffiths","Mo 4:00pm - 6:00pm","","Thermal Fluids Laboratory","",Open,19,21,0
+14706,MAE,3310,001,Lecture,"3","Michael Momot","MoWeFr 10:00am - 10:50am","","Aerospace Structures","",Open,148,150,0
+16292,MAE,3310,002,Lecture,"3","Michael Momot","MoWeFr 9:00am - 9:50am","","Aerospace Structures","",Open,34,48,0
+15261,MAE,3420,001,Lecture,"3","Chen Cui","TuTh 9:30am - 10:45am","","Computational Methods in Mechanical & Aerospace Engineering","",Open,59,72,0
+15589,MAE,3420,101,Laboratory,"0","Chen Cui","We 6:00pm - 8:00pm","","Computational Methods in Mechanical & Aerospace Engineering","",Closed,31,30,0
+15590,MAE,3420,102,Laboratory,"0","Chen Cui","Th 6:00pm - 8:00pm","","Computational Methods in Mechanical & Aerospace Engineering","",Open,28,30,0
+14707,MAE,3610,001,Lecture,"3","Baoxing Xu","TuTh 12:30pm - 1:45pm","","Aerospace Materials","",Open,76,80,0
+14708,MAE,3710,001,Lecture,"3","Shawn Russell","MoWeFr 1:00pm - 1:50pm","","Mechanical Systems","",Open,119,140,0
+14709,MAE,4120,001,Lecture,"3","Lin Ma","MoWe 8:30am - 9:45am","","Aerospace Propulsion","",Closed,80,80,0
+16253,MAE,4501,001,Lecture,"3","Sarah Sun","MoWe 11:00am - 12:15pm","","Special Topics in Mechanical Engineering","Robotic Manipulators",Open,7,10,0
+19717,MAE,4501,002,Lecture,"3","Toni Tang","MoWe 2:00pm - 3:15pm","","Special Topics in Mechanical Engineering","Fracture Mechanics",Open,0,15,0
+20190,MAE,4501,003,Lecture,"3","Robert Rockwell","Fr 2:00pm - 4:30pm","","Special Topics in Mechanical Engineering","Fund. of Finite Element Anal.",Open,23,30,0
+20525,MAE,4501,004,Lecture,"3","Xiaodong Li","Fr 1:30pm - 4:00pm","","Special Topics in Mechanical Engineering","Vehicle Composites and Manufac",Open,13,17,0
+21612,MAE,4501,005,IND,"3","Patrick Hopkins","TBA","","Special Topics in Mechanical Engineering","Adv Microscale Heat Transfer",Closed,1,1,0
+15927,MAE,4504,001,Lecture,"3","Craig Nickol","Th 6:00pm - 8:30pm","","Special Topics in Aerospace Engineering","Aerospace Systems Development",Open,6,10,0
+16423,MAE,4511,001,IND,"1.5","Natasha Smith","TBA","","Mechanical Engineering Special Project","Individual Research Projects",Open,0,5,0
+20551,MAE,4511,002,IND,"1.5","Jason Forman","TBA","","Mechanical Engineering Special Project","Individual Research Projects",Open,1,30,0
+15570,MAE,4513,001,IND,"1.5","Chloe Dedic","TBA","","Aerospace Engineering Special Projects","Laser Diag Reacting Flows I",Open,5,30,0
+15690,MAE,4513,002,IND,"1.5","Chloe Dedic","TBA","","Aerospace Engineering Special Projects","Adv Exper Spectroscopy Methods",Open,0,30,0
+20602,MAE,4513,003,IND,"1.5","Eric Loth","TBA","","Aerospace Engineering Special Projects","Wind Energy Research",Open,0,30,0
+21577,MAE,4513,004,IND,"1.5","Frank Lagor","TBA","","Aerospace Engineering Special Projects","Experimental Flow Sensing I",Open,2,5,0
+21596,MAE,4513,005,IND,"1.5","Haibo Dong","TBA","","Aerospace Engineering Special Projects","Fluid Dynamics Research I",Open,2,30,0
+21537,MAE,4514,001,IND,"1.5","Daniel Quinn","TBA","","Aerospace Engineering Special Projects","Fluid Dynamics Research II",Open,2,30,0
+14710,MAE,4610,001,Lecture,"3","Michael Momot","Th 12:30pm - 1:45pm","","Mechanical Engineering Design I","",Open,34,36,0
+15161,MAE,4610,002,Lecture,"3","Michael Momot","Th 12:30pm - 1:45pm","","Mechanical Engineering Design I","",Open,28,30,0
+15649,MAE,4610,003,Lecture,"3","Michael Momot","Th 12:30pm - 1:45pm","","Mechanical Engineering Design I","",Open,16,24,0
+16283,MAE,4620,001,Lecture,"3","Michael Momot, Natasha Smith","TuTh 2:00pm - 3:15pm","","Mechanical Engineering Design II","",Open,4,30,0
+19718,MAE,4720,001,Lecture,"3","Gavin Garner","MoWe 11:00am - 1:00pm","","Advanced Mechatronics","",Open,11,21,0
+16308,MAE,4740,001,Lecture,"3","Robert Rockwell","MoWe 12:30pm - 1:45pm","","Mechanical Vibrations","",Open,1,15,0
+16279,MAE,4790,001,Lecture,"3","Chris Goyne","Tu 2:00pm - 3:15pm","","Aerospace Engineering Design I","",Open,78,84,0
+16280,MAE,4790,101,WKS,"0","Chris Goyne","Th 2:00pm - 3:15pm","","Aerospace Engineering Design I","",Closed,30,30,0
+16281,MAE,4790,102,WKS,"0","Chris Goyne","Th 2:00pm - 3:15pm","","Aerospace Engineering Design I","",Open,29,30,0
+16282,MAE,4790,103,WKS,"0","Chris Goyne","Th 2:00pm - 3:15pm","","Aerospace Engineering Design I","",Open,19,24,0
+14977,MAE,6020,001,Lecture,"3","Natasha Smith","TuTh 9:30am - 10:45am","","Continuum Mechanics with Applications","",Open,22,43,0
+16286,MAE,6020,600,Lecture,"3","Natasha Smith","TBA","","Continuum Mechanics with Applications","",Open,7,30,0
+16309,MAE,6230,001,Lecture,"3","Robert Rockwell","MoWe 12:30pm - 1:45pm","","Vibrations","",Open,22,25,0
+16254,MAE,6360,001,Lecture,"3","Thomas Ward","TuTh 9:30am - 10:45am","","Gas Dynamics","",Open,14,30,0
+16277,MAE,6360,600,Lecture,"3","Thomas Ward","TBA","","Gas Dynamics","",Open,5,30,0
+15996,MAE,6410,001,Lecture,"3","Julie Spencer","MoWe 3:30pm - 4:45pm","","Engineering Mathematics I","",Open,27,30,0
+16041,MAE,6410,600,Lecture,"3","Julie Spencer","TBA","","Engineering Mathematics I","",Open,12,30,0
+16196,MAE,6592,001,Lecture,"3","Craig Nickol","Th 6:00pm - 8:30pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Aerospace Systems Development",Closed,11,10,0
+16198,MAE,6592,002,Lecture,"3","Sarah Sun","MoWe 11:00am - 12:15pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Robotic Manipulators",Open,9,22,0
+19728,MAE,6592,003,Lecture,"3","Toni Tang","MoWe 2:00pm - 3:15pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Fracture Mechanics",Open,14,15,0
+19737,MAE,6592,004,Lecture,"3","Jason Forman","TuTh 11:00am - 12:15pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Impact Mechanics",Closed,15,15,0
+19738,MAE,6592,005,Lecture,"3","Frank Lagor","TuTh 11:00am - 12:15pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Stochastic Estimation & Contrl",Open,14,25,0
+19739,MAE,6592,006,Lecture,"3","Xiaodong Li","Fr 1:30pm - 4:00pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Vehicle Composites and Manufac",Open,6,13,0
+19742,MAE,6592,007,Lecture,"3","Gavin Garner","MoWe 11:00am - 1:00pm","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Advanced Mechatronics",Open,4,21,0
+21377,MAE,6592,008,IND,"3","Peter Griffiths","TBA","","Special Topics in Mechanical and Aerospace Science: Intermediate Level","Industrial Applications",Closed,1,1,0
+16015,MAE,6600,001,Lecture,"3","Zongli Lin","MoWe 11:00am - 12:15pm","","Introduction to Control Systems","",Open,22,24,0
+15928,MAE,6720,001,Lecture,"3","Xinfeng Gao","MoWe 11:00am - 12:15pm","","Computational Fluid Dynamics I","",Open,10,25,0
+15929,MAE,6720,600,Lecture,"3","Xinfeng Gao","TBA","","Computational Fluid Dynamics I","",Open,4,15,0
+15988,MAE,6780,001,Lecture,"3","Brad Campbell, Arsalan Heydarian","MoWe 12:30pm - 1:45pm","","Cyber-Physical Systems Technology and Ethics","",Open,4,7,0
+19749,MAE,6870,001,Lecture,"3","Chloe Dedic","TuTh 2:00pm - 3:15pm","","Applied Engineering Optics","",Open,16,20,0
+19750,MAE,6870,600,Lecture,"3","Chloe Dedic","TBA","","Applied Engineering Optics","",Open,6,30,0
+15575,MAE,6993,001,IND,"3","Lin Ma","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,5,0
+15168,MAE,6993,002,IND,"3","Haibo Dong","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,5,0
+15394,MAE,6993,003,IND,"3","Gavin Garner","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,5,0
+15481,MAE,6993,004,IND,"3","Baoxing Xu","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,30,0
+15681,MAE,6993,005,IND,"3","Gang Tao","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,1,0
+15755,MAE,6993,006,IND,"3","Sarah Sun","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,5,0
+15824,MAE,6993,007,IND,"3","Daniel Quinn","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,2,30,0
+15828,MAE,6993,008,IND,"3","Jason Forman","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,30,0
+16050,MAE,6993,009,IND,"3","Thomas Ward","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,1,5,0
+16145,MAE,6993,010,IND,"3","Keivan Esfarjani","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,30,0
+21085,MAE,6993,011,IND,"3","Chen Cui","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,0,30,0
+21594,MAE,6993,012,IND,"3","Chris Goyne","TBA","","Independent Study in Mechanical or Aerospace Science: Intermediate Level","",Open,1,30,0
+14711,MAE,7510,001,SEM,"0 - 1","David Brown, Chen Cui","Th 4:00pm - 5:00pm","","Research Seminar, Mechanical and Aerospace Engineering: Master's Students","",Closed,23,20,0
+15833,MAE,7510,600,SEM,"0 - 1","Toni Tang","TBA","","Research Seminar, Mechanical and Aerospace Engineering: Master's Students","",Open,5,20,0
+16328,MAE,7530,001,IND,"3","Richard Kent","TBA","","Independent Study in Mechanical or Aerospace Engineering Science: Advanced","Adv Injury Causation Analysis",Open,0,30,0
+21413,MAE,7530,002,IND,"3","Xinfeng Gao","TBA","","Independent Study in Mechanical or Aerospace Engineering Science: Advanced","Adv. In Comp. M & S",Open,0,10,0
+20495,MAE,7720,001,Lecture,"3","Haibo Dong","TuTh 12:30pm - 1:45pm","","Computational Fluid Dynamics II","",Open,6,15,0
+14746,MAE,8591,001,Lecture,"0 - 1","David Brown, Chen Cui","Th 4:00pm - 5:00pm","","Research Seminar, Mechanical and Aerospace Engineering: Doctoral Students","",Open,39,60,0
+20816,MAE,8591,600,Lecture,"0 - 1","Toni Tang","TBA","","Research Seminar, Mechanical and Aerospace Engineering: Doctoral Students","",Open,0,30,0
+14712,MAE,8897,001,IND,"1 - 6","Harsha Chelliah","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15904,MAE,8897,002,IND,"1 - 6","Haydn Wadley","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15115,MAE,8897,003,IND,"1 - 6","Hilary Bart-Smith","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15116,MAE,8897,004,IND,"1 - 6","Chris Goyne","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15190,MAE,8897,005,IND,"1 - 6","Eric Loth","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15148,MAE,8897,006,IND,"1 - 6","Keivan Esfarjani","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15149,MAE,8897,007,IND,"1 - 6","Carl Knospe","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15150,MAE,8897,008,IND,"1 - 6","Baoxing Xu","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15155,MAE,8897,009,IND,"1 - 6","Robert Rockwell","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15191,MAE,8897,010,IND,"1 - 6","Shawn Russell","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15192,MAE,8897,011,IND,"1 - 6","Natasha Smith","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15193,MAE,8897,012,IND,"1 - 6","Patrick Hopkins","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15194,MAE,8897,013,IND,"1 - 6","Daniel Quinn","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15195,MAE,8897,014,IND,"1 - 6","Matthew Panzer","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15196,MAE,8897,015,IND,"1 - 6","Gavin Garner","TBA","","Graduate Teaching Instruction","",Open,1,30,0
+15197,MAE,8897,016,IND,"1 - 6","Xiaodong Li","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15198,MAE,8897,017,IND,"1 - 6","Haibo Dong","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15899,MAE,8897,018,IND,"1 - 6","Joseph Zhu","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15472,MAE,8897,019,IND,"1 - 6","Richard Kent","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15549,MAE,8897,020,IND,"1 - 6","Michael Momot","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15550,MAE,8897,021,IND,"1 - 6","Prasanna Balachandran","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15900,MAE,8897,022,IND,"1 - 6","Neal Morgan","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15901,MAE,8897,023,IND,"1 - 6","Bryn Seabrook","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16359,MAE,8897,024,IND,"1 - 6","Toni Tang","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16360,MAE,8897,025,IND,"1 - 6","David Brown","TBA","","Graduate Teaching Instruction","",Open,1,30,0
+16361,MAE,8897,026,IND,"1 - 6","Chen Cui","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16362,MAE,8897,027,IND,"1 - 6","Peter Griffiths","TBA","","Graduate Teaching Instruction","",Open,2,30,0
+14713,MAE,8999,001,IND,"1 - 12","Hilary Bart-Smith","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,40,0
+14792,MAE,8999,002,IND,"1 - 12","Chris Goyne","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14793,MAE,8999,003,IND,"1 - 12","Richard Kent","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16132,MAE,8999,004,IND,"1 - 12","Xinfeng Gao","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15056,MAE,8999,005,IND,"1 - 12","Roger Fittro","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14884,MAE,8999,006,IND,"1 - 12","Jeff Crandall","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15062,MAE,8999,007,IND,"1 - 12","Harsha Chelliah","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15389,MAE,8999,008,IND,"1 - 12","Gregory Gerling","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16131,MAE,8999,009,IND,"1 - 12","Jason Forman","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+14885,MAE,8999,010,IND,"1 - 12","Silvia Blemker","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15106,MAE,8999,011,IND,"1 - 12","Baoxing Xu","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15273,MAE,8999,012,IND,"1 - 12","Daniel Quinn","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14953,MAE,8999,013,IND,"1 - 12","Eric Loth","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15269,MAE,8999,014,IND,"1 - 12","Robert Salzar","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15104,MAE,8999,015,IND,"1 - 12","Jason Kerrigan","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15105,MAE,8999,016,IND,"1 - 12","Matthew Panzer","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15026,MAE,8999,017,IND,"1 - 12","Haibo Dong","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15041,MAE,8999,018,IND,"1 - 12","Gavin Garner","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15071,MAE,8999,019,IND,"1 - 12","Carl Knospe","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15113,MAE,8999,020,IND,"1 - 12","Patrick Hopkins","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16130,MAE,8999,021,IND,"1 - 12","Thomas Ward","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15114,MAE,8999,022,IND,"1 - 12","Xiaodong Li","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15300,MAE,8999,023,IND,"1 - 12","Shawn Russell","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15313,MAE,8999,024,IND,"1 - 12","Keivan Esfarjani","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15529,MAE,8999,025,IND,"1 - 12","Tomonari Furukawa","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15645,MAE,8999,026,IND,"1 - 12","Chloe Dedic","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15753,MAE,8999,027,IND,"1 - 12","Sarah Sun","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16042,MAE,8999,028,IND,"1 - 12","Elizabeth Opila","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16128,MAE,8999,029,IND,"1 - 12","Frank Lagor","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+16347,MAE,8999,030,IND,"1 - 12","David Brown","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16348,MAE,8999,031,IND,"1 - 12","Chen Cui","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16349,MAE,8999,032,IND,"1 - 12","Peter Griffiths","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16353,MAE,8999,033,IND,"1 - 12","Toni Tang","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16483,MAE,8999,034,IND,"1 - 12","Lin Ma","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+21522,MAE,8999,035,IND,"1 - 12","Bronislaw Gepner","TBA","","Master's Thesis Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+14714,MAE,9897,001,IND,"1 - 6","Harsha Chelliah","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+16140,MAE,9897,002,IND,"1 - 6","Dwight Dart","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15117,MAE,9897,003,IND,"1 - 6","Hilary Bart-Smith","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15118,MAE,9897,004,IND,"1 - 6","Chris Goyne","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15119,MAE,9897,005,IND,"1 - 6","Eric Loth","TBA","","Graduate Teaching Instruction","",Open,1,10,0
+15199,MAE,9897,006,IND,"1 - 6","Shawn Russell","TBA","","Graduate Teaching Instruction","",Open,1,10,0
+15151,MAE,9897,007,IND,"1 - 6","Keivan Esfarjani","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15152,MAE,9897,008,IND,"1 - 6","Carl Knospe","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15153,MAE,9897,009,IND,"1 - 6","Baoxing Xu","TBA","","Graduate Teaching Instruction","",Open,1,10,0
+15156,MAE,9897,010,IND,"1 - 6","Robert Rockwell","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15200,MAE,9897,011,IND,"1 - 6","Natasha Smith","TBA","","Graduate Teaching Instruction","",Open,1,10,0
+15201,MAE,9897,012,IND,"1 - 6","Patrick Hopkins","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15202,MAE,9897,013,IND,"1 - 6","Daniel Quinn","TBA","","Graduate Teaching Instruction","",Open,1,10,0
+15203,MAE,9897,014,IND,"1 - 6","Matthew Panzer","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15204,MAE,9897,015,IND,"1 - 6","Gavin Garner","TBA","","Graduate Teaching Instruction","",Open,1,10,0
+15205,MAE,9897,016,IND,"1 - 6","Xiaodong Li","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15206,MAE,9897,017,IND,"1 - 6","Haibo Dong","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15207,MAE,9897,018,IND,"1 - 6","James McDaniel","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15211,MAE,9897,019,IND,"1 - 6","Haydn Wadley","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15216,MAE,9897,020,IND,"1 - 6","David Edwards","TBA","","Graduate Teaching Instruction","",Open,0,5,0
+15551,MAE,9897,021,IND,"1 - 6","Michael Momot","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15552,MAE,9897,022,IND,"1 - 6","Prasanna Balachandran","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15553,MAE,9897,023,IND,"1 - 6","Richard Kent","TBA","","Graduate Teaching Instruction","",Open,0,10,0
+15860,MAE,9897,024,IND,"1 - 6","Dale Arney","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15891,MAE,9897,025,IND,"1 - 6","Joseph Zhu","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15902,MAE,9897,026,IND,"1 - 6","Neal Morgan","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+15903,MAE,9897,027,IND,"1 - 6","Lin Ma","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16363,MAE,9897,028,IND,"1 - 6","David Brown","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16364,MAE,9897,029,IND,"1 - 6","Toni Tang","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16365,MAE,9897,030,IND,"1 - 6","Chen Cui","TBA","","Graduate Teaching Instruction","",Open,1,30,0
+16366,MAE,9897,031,IND,"1 - 6","Peter Griffiths","TBA","","Graduate Teaching Instruction","",Open,2,30,0
+16479,MAE,9897,032,IND,"1 - 6","Ethan Scott","TBA","","Graduate Teaching Instruction","",Open,0,30,0
+16043,MAE,9999,001,IND,"1 - 12","Elizabeth Opila","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+14796,MAE,9999,002,IND,"1 - 12","Hilary Bart-Smith","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14797,MAE,9999,003,IND,"1 - 12","Silvia Blemker","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14798,MAE,9999,004,IND,"1 - 12","Harsha Chelliah","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,2,30,0
+14799,MAE,9999,005,IND,"1 - 12","Chris Goyne","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,3,30,0
+15029,MAE,9999,006,IND,"1 - 12","Zongli Lin","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,5,0
+14801,MAE,9999,007,IND,"1 - 12","Richard Kent","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14802,MAE,9999,008,IND,"1 - 12","James McDaniel","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16350,MAE,9999,009,IND,"1 - 12","David Brown","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15248,MAE,9999,010,IND,"1 - 12","Keivan Esfarjani","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15047,MAE,9999,011,IND,"1 - 12","Gregory Gerling","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14825,MAE,9999,012,IND,"1 - 12","Haydn Wadley","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15274,MAE,9999,013,IND,"1 - 12","Daniel Quinn","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+14886,MAE,9999,014,IND,"1 - 12","Jeff Crandall","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15108,MAE,9999,015,IND,"1 - 12","Matthew Panzer","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,7,30,0
+15270,MAE,9999,016,IND,"1 - 12","Robert Salzar","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16351,MAE,9999,017,IND,"1 - 12","Chen Cui","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15338,MAE,9999,018,IND,"1 - 12","Lin Ma","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14951,MAE,9999,019,IND,"1 - 12","Matthew Reidenbach","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+14952,MAE,9999,020,IND,"1 - 12","Eric Loth","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,2,30,0
+15482,MAE,9999,021,IND,"1 - 12","Qing Chang","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,4,30,0
+14993,MAE,9999,022,IND,"1 - 12","Patrick Hopkins","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,11,30,0
+15107,MAE,9999,023,IND,"1 - 12","Jason Kerrigan","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15018,MAE,9999,024,IND,"1 - 12","Robert Lindberg","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15354,MAE,9999,025,IND,"1 - 12","Chloe Dedic","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,6,30,0
+15027,MAE,9999,026,IND,"1 - 12","Haibo Dong","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,4,30,0
+15058,MAE,9999,027,IND,"1 - 12","Xiaodong Li","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,6,30,0
+15392,MAE,9999,028,IND,"1 - 12","Roger Fittro","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15109,MAE,9999,029,IND,"1 - 12","Baoxing Xu","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,3,30,0
+15134,MAE,9999,030,IND,"1 - 12","Xiaodong Li","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,3,30,0
+15301,MAE,9999,031,IND,"1 - 12","Shawn Russell","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15314,MAE,9999,032,IND,"1 - 12","Daniel Quinn","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15464,MAE,9999,033,IND,"1 - 12","Melur Ramasubramanian","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+15547,MAE,9999,034,IND,"1 - 12","Tomonari Furukawa","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,2,30,0
+15568,MAE,9999,035,IND,"1 - 12","Cody Fleming","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15714,MAE,9999,036,IND,"1 - 12","Elizabeth Opila","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+15754,MAE,9999,037,IND,"1 - 12","Sarah Sun","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,7,30,0
+16062,MAE,9999,038,IND,"1 - 12","Thomas Ward","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+16063,MAE,9999,039,IND,"1 - 12","Xinfeng Gao","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,2,30,0
+16129,MAE,9999,040,IND,"1 - 12","Frank Lagor","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,2,30,0
+16133,MAE,9999,041,IND,"1 - 12","Jason Forman","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,8,30,0
+16352,MAE,9999,042,IND,"1 - 12","Peter Griffiths","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,0,30,0
+16354,MAE,9999,043,IND,"1 - 12","Toni Tang","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+21346,MAE,9999,044,IND,"1 - 12","D Keller","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,1,30,0
+21523,MAE,9999,045,IND,"1 - 12","Bronislaw Gepner","TBA","","Dissertation Research, Mechanical and Aerospace Engineering","",Open,3,30,0

@@ -1,0 +1,179 @@
+ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor,Days,Room,Title,Topic,Status,Enrollment,EnrollmentLimit,Waitlist
+10328,PHYS,1050,001,Lecture,"3","Chris Neu","MoWeFr 1:00pm - 1:50pm","","How Things Work","",Open,140,156,0
+11483,PHYS,1110,001,Lecture,"3","E Dukes","TuTh 9:30am - 10:45am","","Energy, Science and Society","",Open,47,60,0
+11093,PHYS,1425,001,Lecture,"3","Xiaochao Zheng","MoWeFr 12:00pm - 12:50pm","","Introductory Physics 1 for Engineers","",Open,127,135,0
+11198,PHYS,1429,001,Laboratory,"1","Maksim Bychkov","Mo 10:00am - 11:50am","","Introductory Physics 1 Workshop","",Closed,24,2,0
+12864,PHYS,1429,002,Laboratory,"1","Maksim Bychkov","Mo 12:00pm - 1:50pm","","Introductory Physics 1 Workshop","",Closed,25,2,0
+11199,PHYS,1429,003,Laboratory,"1","Maksim Bychkov","Mo 2:00pm - 3:50pm","","Introductory Physics 1 Workshop","",Closed,25,2,0
+11200,PHYS,1429,004,Laboratory,"1","Maksim Bychkov","Mo 4:00pm - 5:50pm","","Introductory Physics 1 Workshop","",Closed,25,2,0
+11201,PHYS,1429,005,Laboratory,"1","Maksim Bychkov","Mo 6:00pm - 7:50pm","","Introductory Physics 1 Workshop","",Closed,23,2,0
+13123,PHYS,1655,001,Lecture,"3","Robert Group","MoWe 3:30pm - 4:45pm","","Introduction to Python for Scientists and Engineers","",Open,61,100,0
+11351,PHYS,1660,001,Lecture,"1","Bryan Wright","Tu 2:00pm - 2:50pm","","Practical Computing for the Physical Sciences","",Open,24,25,0
+11548,PHYS,1660,002,Lecture,"1","Bryan Wright","Th 2:00pm - 2:50pm","","Practical Computing for the Physical Sciences","",Open,6,25,0
+12400,PHYS,1930,001,Lecture,"2","Jongsoo Yoon","MoWe 11:00am - 11:50am","","Physics in the 21st Century","",Open,19,25,0
+10329,PHYS,2010,001,Lecture,"3","Jency Sundararajan","MoWeFr 9:00am - 9:50am","","Principles of Physics 1 for Pre-Health Students","",Closed,126,126,0
+10330,PHYS,2010,002,Lecture,"3","Jency Sundararajan","MoWeFr 10:00am - 10:50am","","Principles of Physics 1 for Pre-Health Students","",Closed,126,126,0
+12411,PHYS,2010,003,Lecture,"3","Jency Sundararajan","MoWeFr 11:00am - 11:50am","","Principles of Physics 1 for Pre-Health Students","",Open,125,126,0
+11241,PHYS,2010,004,Lecture,"3","Rebecca Grouchy","TuTh 9:30am - 10:45am","","Principles of Physics 1 for Pre-Health Students","",Closed,126,126,0
+13307,PHYS,2010,005,Lecture,"3","Rebecca Grouchy","TuTh 11:00am - 12:15pm","","Principles of Physics 1 for Pre-Health Students","",Closed,126,126,0
+14145,PHYS,2010,006,Lecture,"3","Rebecca Grouchy","TuTh 2:00pm - 3:15pm","","Principles of Physics 1 for Pre-Health Students","",Open,125,126,0
+10479,PHYS,2030,001,Laboratory,"1","Maksim Bychkov","Mo 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10480,PHYS,2030,002,Laboratory,"1","Maksim Bychkov","Mo 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+10481,PHYS,2030,003,Laboratory,"1","Maksim Bychkov","Mo 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10482,PHYS,2030,004,Laboratory,"1","Maksim Bychkov","Mo 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+13258,PHYS,2030,005,Laboratory,"1","Maksim Bychkov","Tu 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10483,PHYS,2030,006,Laboratory,"1","Maksim Bychkov","Tu 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10484,PHYS,2030,007,Laboratory,"1","Maksim Bychkov","Tu 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10485,PHYS,2030,008,Laboratory,"1","Maksim Bychkov","Tu 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10486,PHYS,2030,009,Laboratory,"1","Maksim Bychkov","Tu 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+10487,PHYS,2030,010,Laboratory,"1","Maksim Bychkov","Tu 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+10488,PHYS,2030,011,Laboratory,"1","Maksim Bychkov","Tu 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10489,PHYS,2030,012,Laboratory,"1","Maksim Bychkov","We 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10490,PHYS,2030,013,Laboratory,"1","Maksim Bychkov","We 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+10491,PHYS,2030,014,Laboratory,"1","Maksim Bychkov","We 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+12477,PHYS,2030,015,Laboratory,"1","Maksim Bychkov","We 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+13337,PHYS,2030,016,Laboratory,"1","Maksim Bychkov","We 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+13343,PHYS,2030,017,Laboratory,"1","Maksim Bychkov","We 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+13993,PHYS,2030,018,Laboratory,"1","Maksim Bychkov","We 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+14217,PHYS,2030,019,Laboratory,"1","Maksim Bychkov","Th 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+14218,PHYS,2030,020,Laboratory,"1","Maksim Bychkov","Th 11:00am - 12:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+14219,PHYS,2030,021,Laboratory,"1","Maksim Bychkov","Th 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+14220,PHYS,2030,022,Laboratory,"1","Maksim Bychkov","Th 1:00pm - 2:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+14221,PHYS,2030,023,Laboratory,"1","Maksim Bychkov","Th 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+14263,PHYS,2030,024,Laboratory,"1","Maksim Bychkov","Th 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,14,2,0
+20611,PHYS,2030,027,Laboratory,"1","Maksim Bychkov","Tu 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+20612,PHYS,2030,028,Laboratory,"1","Maksim Bychkov","Th 3:00pm - 4:50pm","","Principles of Physics 1 Workshop","",Closed,25,2,0
+21099,PHYS,2030,029,Laboratory,"1","Maksim Bychkov","We 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+21100,PHYS,2030,030,Laboratory,"1","Maksim Bychkov","Th 5:00pm - 6:50pm","","Principles of Physics 1 Workshop","",Closed,26,2,0
+21370,PHYS,2030,031,Laboratory,"1","Maksim Bychkov","Tu 9:00am - 10:50am","","Principles of Physics 1 Workshop","",Closed,25,2,0
+21371,PHYS,2030,032,Laboratory,"1","Maksim Bychkov","Th 9:00am - 10:50am","","Principles of Physics 1 Workshop","",Closed,20,2,0
+12766,PHYS,2410,001,Lecture,"3","Cristina Mantilla Suarez","MoWeFr 9:00am - 9:50am","","Introductory Physics 2: Electricity, Magnetism and Optics","",Open,32,60,0
+10508,PHYS,2415,001,Lecture,"3","Utpal Chatterjee","MoWeFr 1:00pm - 1:50pm","","Introductory Physics 2 for Engineers","",Open,34,100,0
+10331,PHYS,2419,001,Laboratory,"1","Maksim Bychkov","Mo 2:00pm - 3:50pm","","Introductory Physics 2 Workshop","",Closed,17,2,0
+10332,PHYS,2419,002,Laboratory,"1","Maksim Bychkov","Tu 12:00pm - 1:50pm","","Introductory Physics 2 Workshop","",Closed,19,2,0
+10333,PHYS,2419,003,Laboratory,"1","Maksim Bychkov","Tu 2:00pm - 3:50pm","","Introductory Physics 2 Workshop","",Closed,22,2,0
+10334,PHYS,2419,004,Laboratory,"1","Maksim Bychkov","We 2:00pm - 3:50pm","","Introductory Physics 2 Workshop","",Closed,20,2,0
+10335,PHYS,2419,005,Laboratory,"1","Maksim Bychkov","Th 12:00pm - 1:50pm","","Introductory Physics 2 Workshop","",Closed,8,2,0
+10337,PHYS,3110,001,Lecture,"3","Bellave Shivaram","TuTh 12:30pm - 1:45pm","","Widely Applied Physics","",Open,10,40,0
+10339,PHYS,3170,001,Laboratory,"3","Jongsoo Yoon","TuTh 2:00pm - 4:50pm","","Advanced Laboratory A","",Open,5,20,0
+13124,PHYS,3210,001,Lecture,"3","Julian Heeck","MoWeFr 10:00am - 10:50am","","Classical Mechanics","",Open,54,70,0
+10340,PHYS,3310,001,Lecture,"3","Cass Sackett","TuTh 11:00am - 12:15pm","","Statistical Physics","",Open,61,70,0
+10341,PHYS,3430,001,Lecture,"3","Kent Paschke","MoWeFr 9:00am - 9:50am","","Electricity and Magnetism II","",Open,28,70,0
+13256,PHYS,3630,001,Lecture,"3","Robert Hirosky","MoWe 2:00pm - 3:15pm","","Computational Physics","",Open,5,30,0
+10342,PHYS,3650,001,Lecture,"3","Diana Vaman","MoWeFr 11:00am - 11:50am","","Quantum Physics I","",Open,52,70,0
+10976,PHYS,3993,001,IND,"3","Olivier Pfister","TBA","","Independent Study","",Open,1,30,0
+12063,PHYS,3993,002,IND,"3","Krishni Wijesooriya","TBA","","Independent Study","",Open,0,30,0
+12548,PHYS,3993,003,IND,"3","Chris Neu","TBA","","Independent Study","",Open,0,30,0
+11704,PHYS,3995,001,IND,"3","Gia-Wei Chern","TBA","","Research","",Open,1,30,0
+11689,PHYS,3995,002,IND,"3","Cristina Mantilla Suarez","TBA","","Research","",Open,0,30,0
+11705,PHYS,3995,003,IND,"3","E Dukes","TBA","","Research","",Open,1,30,0
+11151,PHYS,3995,004,IND,"3","Robert Group","TBA","","Research","",Open,3,30,0
+10894,PHYS,3995,005,IND,"3","Despina Louca","TBA","","Research","",Open,0,30,0
+10895,PHYS,3995,006,IND,"3","Chris Neu","TBA","","Research","",Open,4,30,0
+10896,PHYS,3995,007,IND,"3","Tomoya Asaba","TBA","","Research","",Open,0,30,0
+10897,PHYS,3995,008,IND,"3","Olivier Pfister","TBA","","Research","",Open,0,30,0
+10898,PHYS,3995,009,IND,"3","Cass Sackett","TBA","","Research","",Open,2,30,0
+11706,PHYS,3995,010,IND,"3","Bellave Shivaram","TBA","","Research","",Open,0,30,0
+11707,PHYS,3995,011,IND,"3","Chi Yan Jeffrey Teo","TBA","","Research","",Open,1,30,0
+11708,PHYS,3995,012,IND,"3","Diana Vaman","TBA","","Research","",Open,0,30,0
+11374,PHYS,3995,013,IND,"3","Marija Vucelja","TBA","","Research","",Open,1,30,0
+11709,PHYS,3995,014,IND,"3","Mark Williams","TBA","","Research","",Open,0,30,0
+11710,PHYS,3995,015,IND,"3","Kento Yagi","TBA","","Research","",Open,0,30,0
+11786,PHYS,3995,016,IND,"3","Krishni Wijesooriya","TBA","","Research","",Open,2,30,0
+11920,PHYS,3995,017,IND,"3","Dinko Pocanic","TBA","","Research","",Open,0,30,0
+12000,PHYS,3995,018,IND,"3","Joseph Poon","TBA","","Research","",Open,2,30,0
+12001,PHYS,3995,019,IND,"3","David Nichols","TBA","","Research","",Open,0,30,0
+12031,PHYS,3995,020,IND,"3","Eugene Kolomeisky","TBA","","Research","",Open,0,30,0
+12084,PHYS,3995,021,IND,"3","Nilanga Liyanage","TBA","","Research","",Open,0,30,0
+12235,PHYS,3995,022,IND,"3","Ian Stevenson","TBA","","Research","",Open,0,30,0
+12236,PHYS,3995,023,IND,"3","Julian Heeck","TBA","","Research","",Open,0,30,0
+12237,PHYS,3995,024,IND,"3","Dmytro Pesin","TBA","","Research","",Open,0,30,0
+12238,PHYS,3995,025,IND,"3","Gordon Cates","TBA","","Research","",Open,0,30,0
+12239,PHYS,3995,026,IND,"3","G Miller","TBA","","Research","",Open,0,30,0
+12240,PHYS,3995,027,IND,"3","Israel Klich","TBA","","Research","",Open,0,30,0
+12241,PHYS,3995,028,IND,"3","Keivan Esfarjani","TBA","","Research","",Open,0,30,0
+12242,PHYS,3995,029,IND,"3","Kent Paschke","TBA","","Research","",Open,0,30,0
+12243,PHYS,3995,030,IND,"3","Kevin Lehmann","TBA","","Research","",Open,0,30,0
+12244,PHYS,3995,031,IND,"3","D Keller","TBA","","Research","",Open,1,30,0
+12245,PHYS,3995,032,IND,"3","Peter Arnold","TBA","","Research","",Open,0,30,0
+12246,PHYS,3995,033,IND,"3","Robert Hirosky","TBA","","Research","",Open,2,30,0
+12247,PHYS,3995,034,IND,"3","Robert Jones","TBA","","Research","",Open,0,30,0
+12248,PHYS,3995,035,IND,"3","Seung-Hun Lee","TBA","","Research","",Open,0,30,0
+12249,PHYS,3995,036,IND,"3","Simonetta Liuti","TBA","","Research","",Open,0,30,0
+12250,PHYS,3995,037,IND,"3","Stefan Baessler","TBA","","Research","",Open,1,30,0
+12251,PHYS,3995,038,IND,"3","Utpal Chatterjee","TBA","","Research","",Open,0,30,0
+12252,PHYS,3995,039,IND,"3","Xiaochao Zheng","TBA","","Research","",Open,1,30,0
+12253,PHYS,3995,040,IND,"3","Xu Yi","TBA","","Research","",Open,0,30,0
+10347,PHYS,5000,001,IND,"2","Xiaochao Zheng","Fr 3:30pm - 5:00pm","","Physics Colloquium","",Open,34,80,0
+11812,PHYS,5110,001,Lecture,"1","Ian Stevenson","Mo 3:30pm - 5:00pm","","Special Topics in Classical and Modern Physics","",Open,16,40,0
+11813,PHYS,5110,002,Lecture,"1","D Keller","Tu 3:30pm - 5:00pm","","Special Topics in Classical and Modern Physics","",Open,8,40,0
+11814,PHYS,5110,003,Lecture,"1","Robert Hirosky","We 3:30pm - 5:00pm","","Special Topics in Classical and Modern Physics","",Open,6,40,0
+11815,PHYS,5110,004,Lecture,"1","Tomoya Asaba","Th 3:30pm - 5:00pm","","Special Topics in Classical and Modern Physics","",Open,5,40,0
+13903,PHYS,5240,001,Lecture,"3","David Nichols","TuTh 9:30am - 10:45am","","Introduction to the Theory of General Relativity","",Open,18,25,0
+12384,PHYS,5310,001,Lecture,"3","Ian Stevenson","TuTh 2:00pm - 3:15pm","","Optics","",Open,12,23,0
+10346,PHYS,5620,001,Lecture,"3","Seung-Hun Lee","TuTh 11:00am - 12:15pm","","Solid State Physics","",Open,3,25,0
+10345,PHYS,5630,001,Lecture,"3","Robert Hirosky","MoWe 2:00pm - 3:15pm","","Computational Physics I","",Open,15,30,0
+12169,PHYS,5880,001,Lecture,"3","Gia-Wei Chern","MoWeFr 12:00pm - 12:50pm","","Introduction to Quantum Computing","",Open,10,25,0
+10344,PHYS,7010,001,Lecture,"3","Dmytro Pesin","MoWeFr 10:00am - 10:50am","","Theoretical Mechanics I","",Open,20,24,0
+11185,PHYS,7410,001,Lecture,"3","Chi Yan Jeffrey Teo","TuTh 11:00am - 12:15pm","","Electricity and Magnetism I","",Open,19,24,0
+10348,PHYS,7610,001,Lecture,"3","Eugene Kolomeisky","MoWeFr 11:00am - 11:50am","","Quantum Theory I","",Open,19,25,0
+11787,PHYS,7995,001,IND,"1 - 6","Kent Paschke","TBA","","Independent Study","",Open,0,30,0
+11932,PHYS,7995,002,IND,"1 - 6","Xiaochao Zheng","TBA","","Independent Study","",Open,0,30,0
+11933,PHYS,7995,003,IND,"1 - 6","Chris Neu","TBA","","Independent Study","",Open,0,30,0
+12054,PHYS,7995,004,IND,"1 - 6","Cristina Mantilla Suarez","TBA","","Independent Study","",Open,0,30,0
+12524,PHYS,7995,005,IND,"1 - 6","Dinko Pocanic","TBA","","Independent Study","",Open,0,30,0
+12543,PHYS,7995,006,IND,"1 - 6","Nilanga Liyanage","TBA","","Independent Study","",Open,0,30,0
+10349,PHYS,8630,001,Lecture,"3","Peter Arnold","MoWeFr 10:00am - 10:50am","","Introduction to Field Theory","",Open,22,25,0
+19448,PHYS,8710,001,Lecture,"3","Gordon Cates","MoWeFr 9:00am - 9:50am","","Nuclear Physics I","",Open,13,25,0
+10710,PHYS,8999,001,IND,"1 - 12","Kent Paschke","TBA","","Master Thesis Non-Topical Research","",Open,1,30,0
+12535,PHYS,8999,002,IND,"1 - 12","Gia-Wei Chern","TBA","","Master Thesis Non-Topical Research","",Open,1,30,0
+10492,PHYS,9010,001,WKS,"1","Eugene Kolomeisky","Tu 10:00am - 10:50am","","Introduction to Physics Research I","",Open,16,30,0
+10711,PHYS,9998,001,IND,"1 - 12","Chris Neu","TBA","","Pre-Qual Preparation for Doctoral Research","",Open,0,30,0
+12527,PHYS,9998,002,IND,"1 - 12","Kent Paschke","TBA","","Pre-Qual Preparation for Doctoral Research","",Open,0,30,0
+12528,PHYS,9998,003,IND,"1 - 12","D Keller","TBA","","Pre-Qual Preparation for Doctoral Research","",Open,0,30,0
+12541,PHYS,9998,004,IND,"1 - 12","Kento Yagi","TBA","","Pre-Qual Preparation for Doctoral Research","",Open,1,30,0
+10350,PHYS,9999,001,IND,"1 - 12","Peter Arnold","TBA","","PhD Thesis Non-Topical Research","",Open,1,100,0
+10623,PHYS,9999,002,IND,"1 - 12","Stefan Baessler","TBA","","PhD Thesis Non-Topical Research","",Open,4,30,0
+11816,PHYS,9999,003,IND,"1 - 12","Dmytro Pesin","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+10624,PHYS,9999,004,IND,"1 - 12","Cristina Mantilla Suarez","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+10625,PHYS,9999,005,IND,"1 - 12","Gordon Cates","TBA","","PhD Thesis Non-Topical Research","",Open,3,30,0
+10626,PHYS,9999,006,IND,"1 - 12","Utpal Chatterjee","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+11152,PHYS,9999,007,IND,"1 - 12","Mona Zebarjadi","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+11817,PHYS,9999,008,IND,"1 - 12","Ian Stevenson","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+11153,PHYS,9999,009,IND,"1 - 12","Patrick Hopkins","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10627,PHYS,9999,010,IND,"1 - 12","E Dukes","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+11154,PHYS,9999,011,IND,"1 - 12","Robert Group","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+10628,PHYS,9999,012,IND,"1 - 12","Robert Hirosky","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+10629,PHYS,9999,013,IND,"1 - 12","Mona Zebarjadi","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+10630,PHYS,9999,014,IND,"1 - 12","Robert Jones","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10712,PHYS,9999,015,IND,"1 - 12","Israel Klich","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10713,PHYS,9999,016,IND,"1 - 12","Eugene Kolomeisky","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10714,PHYS,9999,017,IND,"1 - 12","Seung-Hun Lee","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+10715,PHYS,9999,018,IND,"1 - 12","Kevin Lehmann","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10716,PHYS,9999,019,IND,"1 - 12","Simonetta Liuti","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+10717,PHYS,9999,020,IND,"1 - 12","Nilanga Liyanage","TBA","","PhD Thesis Non-Topical Research","",Open,5,30,0
+10718,PHYS,9999,021,IND,"1 - 12","Despina Louca","TBA","","PhD Thesis Non-Topical Research","",Open,5,30,0
+10719,PHYS,9999,022,IND,"1 - 12","Chris Neu","TBA","","PhD Thesis Non-Topical Research","",Open,4,30,0
+10720,PHYS,9999,023,IND,"1 - 12","Tomoya Asaba","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+10721,PHYS,9999,024,IND,"1 - 12","Kent Paschke","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+10722,PHYS,9999,025,IND,"1 - 12","Olivier Pfister","TBA","","PhD Thesis Non-Topical Research","",Open,3,30,0
+10723,PHYS,9999,026,IND,"1 - 12","Dinko Pocanic","TBA","","PhD Thesis Non-Topical Research","",Open,4,30,0
+10724,PHYS,9999,027,IND,"1 - 12","Joseph Poon","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+10725,PHYS,9999,028,IND,"1 - 12","Cass Sackett","TBA","","PhD Thesis Non-Topical Research","",Open,3,30,0
+10726,PHYS,9999,029,IND,"1 - 12","Bellave Shivaram","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+11155,PHYS,9999,030,IND,"1 - 12","Diana Vaman","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+10727,PHYS,9999,031,IND,"1 - 12","Mark Williams","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10728,PHYS,9999,032,IND,"1 - 12","Kento Yagi","TBA","","PhD Thesis Non-Topical Research","",Open,5,30,0
+10729,PHYS,9999,033,IND,"1 - 12","Jongsoo Yoon","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+10730,PHYS,9999,034,IND,"1 - 12","Xiaochao Zheng","TBA","","PhD Thesis Non-Topical Research","",Open,3,30,0
+11711,PHYS,9999,035,IND,"1 - 12","Keivan Esfarjani","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+11268,PHYS,9999,036,IND,"1 - 12","Chi Yan Jeffrey Teo","TBA","","PhD Thesis Non-Topical Research","",Open,0,30,0
+11375,PHYS,9999,037,IND,"1 - 12","Marija Vucelja","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+11428,PHYS,9999,038,IND,"1 - 12","Gia-Wei Chern","TBA","","PhD Thesis Non-Topical Research","",Open,4,30,0
+11576,PHYS,9999,039,IND,"1 - 12","Avik Ghosh","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+11744,PHYS,9999,040,IND,"1 - 12","Xu Yi","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
+12015,PHYS,9999,041,IND,"1 - 12","David Nichols","TBA","","PhD Thesis Non-Topical Research","",Open,3,30,0
+12255,PHYS,9999,042,IND,"1 - 12","D Keller","TBA","","PhD Thesis Non-Topical Research","",Open,6,30,0
+12488,PHYS,9999,043,IND,"1 - 12","Krishni Wijesooriya","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+12495,PHYS,9999,044,IND,"1 - 12","Julian Heeck","TBA","","PhD Thesis Non-Topical Research","",Open,2,30,0
+12509,PHYS,9999,045,IND,"1 - 12","G Miller","TBA","","PhD Thesis Non-Topical Research","",Open,1,30,0
