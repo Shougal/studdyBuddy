@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 //Because of require_once, $conn becomes defined in the current file’s scope
 require_once __DIR__ . '/../config/connect-db.php';  // connect to the db
 
@@ -28,7 +31,38 @@ try {
 }
 
 
+// add lou's list Fall2025 BME
+try{
+    require_once __DIR__ . '/insert_BME_lou\'s.php';
+}catch (PDOException $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+}
+
+// add lou's list Fall2025 CompSci1262Data
+try{
+    require_once __DIR__ . '/insert_CS_lous.php';
+}catch (PDOException $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+}
 
 
+// add lou's list Fall2025 CMAE1258Data
+try{
+    require_once __DIR__ . '/insert_MAE_lous.php';
+}catch (PDOException $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+}
 
+// add lou's list Fall2025 Math
+try{
+    require_once __DIR__ . '/insert_Math_lous.php';
+}catch (PDOException $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+}
+// add lou's list Fall2025 Physics
+try{
+    require_once __DIR__ . '/insert_Physics_lous.php';
+}catch (PDOException $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+}
 ?>

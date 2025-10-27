@@ -1,0 +1,227 @@
+ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor,Days,Room,Title,Topic,Status,Enrollment,EnrollmentLimit,Waitlist
+11482,MATH,1140,001,Lecture,"3","Kristina Cernekova, -","MoWeFr 9:00am - 9:50am","","Financial Mathematics","",Open,35,36,0
+12730,MATH,1140,002,Lecture,"3","Kristina Cernekova, -","MoWeFr 10:00am - 10:50am","","Financial Mathematics","",Closed,36,36,0
+14257,MATH,1140,003,Lecture,"3","Kristina Cernekova, -","MoWeFr 11:00am - 11:50am","","Financial Mathematics","",Open,35,36,0
+21094,MATH,1140,004,Lecture,"3","Zivile Puospekaite, -","MoWe 3:30pm - 4:45pm","","Financial Mathematics","",Closed,36,36,0
+20140,MATH,1150,001,Lecture,"3","Kyong Mi Choi","TuTh 12:30pm - 1:45pm","","The Shape of Space","",Closed,35,35,0
+11175,MATH,1190,100,Lecture,"4","Jim Rolf, -","TuTh 11:00am - 12:15pm","","A Survey of Calculus I with Algebra","",Closed,36,36,0
+11176,MATH,1190,101,Discussion,"0","Gabriel Diraviam","Fr 11:00am - 11:50am","","A Survey of Calculus I with Algebra","",Closed,36,36,0
+20405,MATH,1190,110,SPS,"0","Jim Rolf","Th 7:00pm - 9:00pm","","A Survey of Calculus I with Algebra","",Closed,36,36,0
+19507,MATH,1190,200,Lecture,"4","Jim Rolf, -","TuTh 9:30am - 10:45am","","A Survey of Calculus I with Algebra","",Closed,36,36,0
+19508,MATH,1190,201,Discussion,"0","Tommaso Punis","Fr 10:00am - 10:50am","","A Survey of Calculus I with Algebra","",Closed,36,36,0
+20406,MATH,1190,210,SPS,"0","Jim Rolf","Th 7:00pm - 9:00pm","","A Survey of Calculus I with Algebra","",Closed,36,36,0
+10216,MATH,1210,100,Lecture,"3","Mikhail Tikhonov, -","TuTh 8:00am - 9:15am","","A survey of Calculus I","",Open,32,35,0
+20393,MATH,1210,110,SPS,"0","Mikhail Tikhonov","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,32,36,0
+10217,MATH,1210,200,Lecture,"3","Raul Hernandez, -","TuTh 9:30am - 10:45am","","A survey of Calculus I","",Closed,35,35,0
+20394,MATH,1210,210,SPS,"0","Raul Hernandez","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,35,36,0
+10219,MATH,1210,300,Lecture,"3","David Sherman, -","TuTh 11:00am - 12:15pm","","A survey of Calculus I","",Closed,35,35,0
+20395,MATH,1210,310,SPS,"0","David Sherman","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,35,36,0
+13053,MATH,1210,400,Lecture,"3","David Sherman, -","TuTh 12:30pm - 1:45pm","","A survey of Calculus I","",Closed,35,35,0
+20396,MATH,1210,410,SPS,"0","David Sherman","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,35,36,0
+12729,MATH,1210,500,Lecture,"3","Michael Wills, -","TuTh 2:00pm - 3:15pm","","A survey of Calculus I","",Closed,35,35,0
+20397,MATH,1210,510,SPS,"0","Michael Wills","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Closed,35,35,0
+11541,MATH,1210,600,Lecture,"3","James Bowling, -","TuTh 3:30pm - 4:45pm","","A survey of Calculus I","",Closed,28,28,0
+21095,MATH,1210,610,SPS,"0","James Bowling","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Closed,28,28,0
+13751,MATH,1210,700,Lecture,"3","Joshua Turner, -","TuTh 9:30am - 10:45am","","A survey of Calculus I","",Open,34,35,0
+21096,MATH,1210,710,SPS,"0","Joshua Turner","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,34,36,0
+10218,MATH,1210,800,Lecture,"3","Mason Hart, -","MoWe 2:00pm - 3:15pm","","A survey of Calculus I","",Closed,35,35,0
+20398,MATH,1210,810,SPS,"0","Mason Hart","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,35,36,0
+10220,MATH,1210,900,Lecture,"3","Caelan Wang","MoWe 3:30pm - 4:45pm","","A survey of Calculus I","",Open,34,35,0
+20399,MATH,1210,910,SPS,"0","Caelan Wang","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,34,36,0
+19571,MATH,1210,920,Lecture,"3","Caelan Wang","MoWe 5:00pm - 6:15pm","","A survey of Calculus I","",Closed,35,35,0
+20400,MATH,1210,921,SPS,"0","Caelan Wang","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,35,36,0
+10221,MATH,1210,940,Lecture,"3","Susan Mitchell, -","MoWeFr 10:00am - 10:50am","","A survey of Calculus I","",Open,34,35,0
+20401,MATH,1210,941,SPS,"0","Susan Mitchell","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,34,36,0
+12317,MATH,1210,950,Lecture,"3","Susan Mitchell, -","MoWeFr 11:00am - 11:50am","","A survey of Calculus I","",Open,34,35,0
+20402,MATH,1210,951,SPS,"0","Susan Mitchell","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Open,34,36,0
+11076,MATH,1210,960,Lecture,"3","Susan Mitchell, -","MoWeFr 12:00pm - 12:50pm","","A survey of Calculus I","",Closed,36,35,0
+20403,MATH,1210,961,SPS,"0","Susan Mitchell","Th 7:00pm - 9:00pm","","A survey of Calculus I","",Closed,36,36,0
+11436,MATH,1220,200,Lecture,"3","Yangxiao Luo, -","TuTh 12:30pm - 1:45pm","","A Survey of Calculus II","",Open,34,36,0
+20389,MATH,1220,210,SPS,"0","Yangxiao Luo","Th 7:00pm - 9:00pm","","A Survey of Calculus II","",Open,34,36,0
+11071,MATH,1220,300,Lecture,"3","Maximiliano Sanchez Garza, -","TuTh 2:00pm - 3:15pm","","A Survey of Calculus II","",Open,33,36,0
+20390,MATH,1220,310,SPS,"0","Maximiliano Sanchez Garza","Th 7:00pm - 9:00pm","","A Survey of Calculus II","",Open,33,36,0
+19573,MATH,1220,400,Lecture,"3","Brianna Kurtz","MoWe 2:00pm - 3:15pm","","A Survey of Calculus II","",Closed,36,36,0
+20391,MATH,1220,410,SPS,"0","Brianna Kurtz","Th 7:00pm - 9:00pm","","A Survey of Calculus II","",Closed,36,36,0
+10222,MATH,1310,100,Lecture,"4","Astrid Lilly, -","TuTh 5:00pm - 6:15pm","","Calculus I","",Open,24,28,0
+10228,MATH,1310,101,Discussion,"0","Astrid Lilly","Fr 12:00pm - 12:50pm","","Calculus I","",Open,24,28,0
+20347,MATH,1310,110,SPS,"0","Astrid Lilly","Th 7:00pm - 9:00pm","","Calculus I","",Open,24,30,0
+10223,MATH,1310,200,Lecture,"4","Aaratrick Basu, -","TuTh 9:30am - 10:45am","","Calculus I","",Open,26,28,0
+10231,MATH,1310,201,Discussion,"0","Aaratrick Basu","Fr 10:00am - 10:50am","","Calculus I","",Open,26,28,0
+20348,MATH,1310,210,SPS,"0","Aaratrick Basu","Th 7:00pm - 9:00pm","","Calculus I","",Open,26,30,0
+10224,MATH,1310,300,Lecture,"4","Yizhen Li, -","MoWe 5:00pm - 6:15pm","","Calculus I","",Open,12,28,0
+10229,MATH,1310,301,Discussion,"0","Yizhen Li","Th 5:00pm - 5:50pm","","Calculus I","",Open,12,28,0
+20349,MATH,1310,310,SPS,"0","Yizhen Li","Th 7:00pm - 9:00pm","","Calculus I","",Open,12,30,0
+10225,MATH,1310,400,Lecture,"4","Oscar Arevalo Cordon, -","MoWe 2:00pm - 3:15pm","","Calculus I","",Open,27,28,0
+10230,MATH,1310,401,Discussion,"0","Oscar Arevalo Cordon","Th 5:00pm - 5:50pm","","Calculus I","",Open,27,28,0
+20350,MATH,1310,410,SPS,"0","Oscar Arevalo Cordon","Th 7:00pm - 9:00pm","","Calculus I","",Open,27,30,0
+10226,MATH,1310,500,Lecture,"4","Connor MacMahon, -","TuTh 12:30pm - 1:45pm","","Calculus I","",Open,27,28,0
+10232,MATH,1310,501,Discussion,"0","Connor MacMahon","Fr 11:00am - 11:50am","","Calculus I","",Open,27,28,0
+20351,MATH,1310,510,SPS,"0","Connor MacMahon","Th 7:00pm - 9:00pm","","Calculus I","",Open,27,30,0
+10227,MATH,1310,600,Lecture,"4","Matthew Hudson, -","MoWe 3:30pm - 4:45pm","","Calculus I","",Open,27,28,0
+10233,MATH,1310,601,Discussion,"0","Matthew Hudson","Th 4:00pm - 4:50pm","","Calculus I","",Open,27,28,0
+20352,MATH,1310,610,SPS,"0","Matthew Hudson","Th 7:00pm - 9:00pm","","Calculus I","",Open,27,30,0
+10235,MATH,1310,700,Lecture,"4","Brandon Sisler, -","TuTh 11:00am - 12:15pm","","Calculus I","",Open,27,28,0
+10234,MATH,1310,701,Discussion,"0","Brandon Sisler","Fr 9:00am - 9:50am","","Calculus I","",Open,27,28,0
+20353,MATH,1310,710,SPS,"0","Brandon Sisler","Th 7:00pm - 9:00pm","","Calculus I","",Open,27,30,0
+13752,MATH,1310,800,Lecture,"4","Holden Eriksson, -","TuTh 2:00pm - 3:15pm","","Calculus I","",Open,25,28,0
+13753,MATH,1310,801,Discussion,"0","Holden Eriksson","Fr 1:00pm - 1:50pm","","Calculus I","",Open,25,28,0
+20354,MATH,1310,810,SPS,"0","Holden Eriksson","Th 7:00pm - 9:00pm","","Calculus I","",Open,25,30,0
+11592,MATH,1310,900,Lecture,"4","Vadim Leshkov, -","TuTh 3:30pm - 4:45pm","","Calculus I","",Open,18,28,0
+11593,MATH,1310,901,Discussion,"0","Vadim Leshkov","Fr 12:00pm - 12:50pm","","Calculus I","",Open,18,28,0
+20355,MATH,1310,910,SPS,"0","Vadim Leshkov","Th 7:00pm - 9:00pm","","Calculus I","",Open,18,30,0
+10238,MATH,1320,100,Lecture,"4","Pedro Brunialti, -","TuTh 9:30am - 10:45am","","Calculus II","",Open,24,28,0
+10241,MATH,1320,101,Discussion,"0","Pedro Brunialti","Fr 10:00am - 10:50am","","Calculus II","",Open,24,28,0
+20339,MATH,1320,110,SPS,"0","Pedro Brunialti","Th 7:00pm - 9:15pm","","Calculus II","",Open,24,28,0
+10236,MATH,1320,200,Lecture,"4","Bakhyt Aitzhanova","TuTh 12:30pm - 1:45pm","","Calculus II","",Open,25,28,0
+10239,MATH,1320,201,Discussion,"0","Avinash Iyer","Fr 9:00am - 9:50am","","Calculus II","",Open,25,28,0
+20340,MATH,1320,210,SPS,"0","Bakhyt Aitzhanova","Th 7:00pm - 9:15pm","","Calculus II","",Open,25,28,0
+10237,MATH,1320,300,Lecture,"4","Amelia Buckland, -","TuTh 2:00pm - 3:15pm","","Calculus II","",Open,26,28,0
+10240,MATH,1320,301,Discussion,"0","Amelia Buckland","Fr 1:00pm - 1:50pm","","Calculus II","",Open,26,28,0
+20341,MATH,1320,310,SPS,"0","Amelia Buckland","Th 7:00pm - 9:15pm","","Calculus II","",Open,26,28,0
+11988,MATH,1320,400,Lecture,"4","Shengkuan Yan, -","TuTh 11:00am - 12:15pm","","Calculus II","",Open,23,28,0
+11989,MATH,1320,401,Discussion,"0","Shengkuan Yan","Fr 11:00am - 11:50am","","Calculus II","",Open,23,28,0
+20342,MATH,1320,410,SPS,"0","Shengkuan Yan","Th 7:00pm - 9:15pm","","Calculus II","",Open,23,28,0
+11847,MATH,1320,500,Lecture,"4","Jun Park, -","MoWe 2:00pm - 3:15pm","","Calculus II","",Open,26,28,0
+11848,MATH,1320,501,Discussion,"0","Jun Park","Th 4:00pm - 4:50pm","","Calculus II","",Open,26,28,0
+20343,MATH,1320,510,SPS,"0","Jun Park","Th 7:00pm - 9:15pm","","Calculus II","",Open,26,28,0
+11849,MATH,1320,600,Lecture,"4","Ruiqi Zou, -","MoWe 3:30pm - 4:45pm","","Calculus II","",Open,24,28,0
+11850,MATH,1320,601,Discussion,"0","Ruiqi Zou","Th 5:00pm - 5:50pm","","Calculus II","",Open,24,28,0
+20344,MATH,1320,610,SPS,"0","Ruiqi Zou","Th 7:00pm - 9:15pm","","Calculus II","",Open,24,28,0
+10242,MATH,2310,100,Lecture,"4","Daniel James","MoWeFr 9:00am - 9:50am","","Calculus III","",Closed,40,40,0
+10243,MATH,2310,101,Discussion,"0","Wing Chun Yu","Th 5:00pm - 5:50pm","","Calculus III","",Closed,40,40,0
+12727,MATH,2310,200,Lecture,"4","Daniel James","MoWeFr 10:00am - 10:50am","","Calculus III","",Closed,43,43,0
+12728,MATH,2310,201,Discussion,"0","Shaoyi Zhang","Th 4:00pm - 4:50pm","","Calculus III","",Closed,43,43,0
+11210,MATH,2310,300,Lecture,"4","Jacob Campbell","MoWe 2:00pm - 3:15pm","","Calculus III","",Open,37,38,0
+11211,MATH,2310,301,Discussion,"0","Andrew Taylor","Tu 6:00pm - 6:50pm","","Calculus III","",Open,37,38,0
+11355,MATH,2310,400,Lecture,"4","Jacob Campbell","MoWe 3:30pm - 4:45pm","","Calculus III","",Closed,38,38,0
+11356,MATH,2310,401,Discussion,"0","Andrew Taylor","Tu 5:00pm - 5:50pm","","Calculus III","",Closed,38,38,0
+19583,MATH,2310,500,Lecture,"4","Evangelos Dimou","TuTh 12:30pm - 1:45pm","","Calculus III","",Closed,38,38,0
+19584,MATH,2310,501,Discussion,"0","Liam Staker","We 5:00pm - 5:50pm","","Calculus III","",Closed,38,38,0
+20580,MATH,2310,510,SPS,"0","Evangelos Dimou","We 7:00pm - 8:30pm","","Calculus III","",Closed,38,38,0
+13747,MATH,2310,600,Lecture,"4","Kang Lu","TuTh 2:00pm - 3:15pm","","Calculus III","",Closed,36,36,0
+13748,MATH,2310,601,Discussion,"0","Erica Zhang","We 6:00pm - 6:50pm","","Calculus III","",Closed,36,36,0
+11212,MATH,2315,100,Lecture,"4","Benjamin Hayes","TuTh 11:00am - 12:15pm","","Advanced Calculus and Linear Algebra I","",Open,16,36,0
+12088,MATH,2315,101,Discussion,"0","Fausto Navarro Cepeda","We 5:00pm - 5:50pm","","Advanced Calculus and Linear Algebra I","",Open,16,36,0
+11594,MATH,3000,100,Lecture,"4","J.D. Quigley","MoWe 2:00pm - 3:15pm","","Transition to Higher Mathematics","",Open,34,35,0
+11729,MATH,3000,101,Discussion,"0","Nicholas Sweeney","Th 5:00pm - 5:50pm","","Transition to Higher Mathematics","",Open,34,35,0
+20138,MATH,3000,200,Lecture,"4","Joshua Turner","TuTh 11:00am - 12:15pm","","Transition to Higher Mathematics","",Open,17,18,0
+20139,MATH,3000,201,Discussion,"0","Joshua Turner","Fr 11:00am - 11:50am","","Transition to Higher Mathematics","",Open,17,30,0
+10244,MATH,3100,001,Lecture,"3","Abdelmalek Abdesselam","MoWeFr 11:00am - 11:50am","","Introduction to Probability","",Open,33,36,0
+11595,MATH,3100,002,Lecture,"3","Abdelmalek Abdesselam","MoWeFr 12:00pm - 12:50pm","","Introduction to Probability","",Open,34,36,0
+11213,MATH,3100,003,Lecture,"3","Evangelos Dimou","TuTh 2:00pm - 3:15pm","","Introduction to Probability","",Open,35,36,0
+14253,MATH,3100,004,Lecture,"3","Pranava Jayanti","MoWe 3:30pm - 4:45pm","","Introduction to Probability","",Open,23,32,0
+10245,MATH,3250,100,Lecture,"4","Brandon Shapiro","TuTh 11:00am - 12:15pm","","Ordinary Differential Equations","",Open,35,36,0
+10247,MATH,3250,101,Discussion,"0","Shoya Shimazaki","We 6:00pm - 6:50pm","","Ordinary Differential Equations","",Open,35,36,0
+10246,MATH,3250,200,Lecture,"4","Brandon Shapiro","TuTh 9:30am - 10:45am","","Ordinary Differential Equations","",Closed,39,36,0
+10248,MATH,3250,201,Discussion,"0","Shoya Shimazaki","We 5:00pm - 5:50pm","","Ordinary Differential Equations","",Closed,39,36,0
+13749,MATH,3250,300,Lecture,"4","John Imbrie","TuTh 12:30pm - 1:45pm","","Ordinary Differential Equations","",Open,33,36,0
+13750,MATH,3250,301,Discussion,"0","Roan Luikart","Mo 5:00pm - 5:50pm","","Ordinary Differential Equations","",Open,33,36,0
+10249,MATH,3310,100,Lecture,"4","Yen Do","TuTh 2:00pm - 3:15pm","","Basic Real Analysis","",Open,32,35,0
+12200,MATH,3310,101,Discussion,"0","Khoa Nguyen Dinh","We 6:00pm - 6:50pm","","Basic Real Analysis","",Open,32,35,0
+10250,MATH,3310,200,Lecture,"4","Thomas Mark","TuTh 9:30am - 10:45am","","Basic Real Analysis","",Open,34,35,0
+12201,MATH,3310,201,Discussion,"0","Samir Fridhi","We 5:00pm - 5:50pm","","Basic Real Analysis","",Open,34,35,0
+19587,MATH,3310,300,Lecture,"4","Kang Lu","TuTh 12:30pm - 1:45pm","","Basic Real Analysis","",Closed,20,20,0
+19588,MATH,3310,301,Discussion,"0","Ben Hilbert","Mo 5:00pm - 5:50pm","","Basic Real Analysis","",Closed,20,20,0
+11229,MATH,3340,001,Lecture,"3","Andrei Rapinchuk","TuTh 9:30am - 10:45am","","Complex Variables with Applications","",Open,33,35,0
+11596,MATH,3350,001,Lecture,"3","Jeffrey Holt","TuTh 3:30pm - 4:45pm","","Applied Linear Algebra","",Closed,45,45,0
+11731,MATH,3350,002,Lecture,"3","Jeffrey Holt","TuTh 5:00pm - 6:15pm","","Applied Linear Algebra","",Open,38,45,0
+10251,MATH,3351,001,Lecture,"3","Sarah Blackwell","MoWeFr 10:00am - 10:50am","","Elementary Linear Algebra","",Open,35,36,0
+19585,MATH,3351,003,Lecture,"3","Tai Melcher","TuTh 2:00pm - 3:15pm","","Elementary Linear Algebra","",Closed,37,36,0
+10252,MATH,3354,001,Lecture,"3","Evangelia Gazaki","MoWe 3:30pm - 4:45pm","","Survey of Algebra","",Closed,35,35,0
+11851,MATH,3354,002,Lecture,"3","Oliver Wang","TuTh 11:00am - 12:15pm","","Survey of Algebra","",Open,28,35,0
+19586,MATH,3354,003,Lecture,"3","Bakhyt Aitzhanova","TuTh 2:00pm - 3:15pm","","Survey of Algebra","",Open,25,28,0
+10253,MATH,4040,001,Lecture,"3","Peter Abramenko","MoWeFr 12:00pm - 12:50pm","","Discrete Mathematics","",Open,18,30,0
+11328,MATH,4110,001,Lecture,"3","Tai Melcher","TuTh 12:30pm - 1:45pm","","Introduction to Stochastic Processes","",Open,32,36,0
+11377,MATH,4140,001,Lecture,"3","Christian Gromoll","MoWe 2:00pm - 3:15pm","","Mathematics of Derivative Securities","",Open,16,35,0
+11597,MATH,4220,001,Lecture,"3","Juraj Foldes","TuTh 9:30am - 10:45am","","Partial Differential Equations and Applied Mathematics","",Open,42,45,0
+11329,MATH,4310,001,Lecture,"3","Mikhail Ershov","MoWe 3:30pm - 4:45pm","","Introduction to Real Analysis","",Open,28,32,0
+20141,MATH,4559,001,Lecture,"3","Christian Reidys","TuTh 2:00pm - 3:15pm","","New Course in Mathematics","Intro to Sequence Analysis",Open,13,25,0
+10254,MATH,4651,001,Lecture,"3","Ryan Stees","TuTh 3:30pm - 4:45pm","","Advanced Linear Algebra","",Open,19,35,0
+19591,MATH,4720,001,Lecture,"3","Slava Krushkal","TuTh 12:30pm - 1:45pm","","Introduction to Differential Geometry","",Open,12,20,0
+11463,MATH,4770,001,Lecture,"3","Thomas Koberda","TuTh 11:00am - 12:15pm","","General Topology","",Open,10,20,0
+11943,MATH,4900,001,IND,"3","Peter Christopher Leslie Humphries","TBA","","Distinguished Major Thesis","",Open,1,2,0
+12006,MATH,4900,002,IND,"3","J.D. Quigley","TBA","","Distinguished Major Thesis","",Open,1,2,0
+14294,MATH,4900,003,IND,"3","To Be Announced","TBA","","Distinguished Major Thesis","",Open,0,6,0
+14295,MATH,4900,004,IND,"3","To Be Announced","TBA","","Distinguished Major Thesis","",Open,0,6,0
+14296,MATH,4900,005,IND,"3","To Be Announced","TBA","","Distinguished Major Thesis","",Open,0,6,0
+14297,MATH,4900,006,IND,"3","To Be Announced","TBA","","Distinguished Major Thesis","",Open,0,6,0
+12077,MATH,4993,001,IND,"1 - 3","Evangelia Gazaki","TBA","","Independent Study","",Open,0,30,0
+12498,MATH,4993,002,IND,"1 - 3","Benjamin Hayes","TBA","","Independent Study","",Open,1,30,0
+12499,MATH,4993,003,IND,"1 - 3","Juraj Foldes","TBA","","Independent Study","",Open,2,30,0
+12534,MATH,4993,004,IND,"1 - 3","Sara Maloni","TBA","","Independent Study","",Open,0,30,0
+12538,MATH,4993,005,IND,"1 - 3","Thomas Mark","TBA","","Independent Study","",Open,0,30,0
+12539,MATH,4993,006,IND,"1 - 3","Thomas Koberda","TBA","","Independent Study","",Open,1,30,0
+12862,MATH,4993,007,IND,"1 - 3","You Qi","TBA","","Independent Study","",Open,8,30,0
+12886,MATH,4993,008,IND,"1 - 3","Peter Christopher Leslie Humphries","TBA","","Independent Study","",Open,0,30,0
+12949,MATH,4993,009,IND,"1 - 3","Daniel James","TBA","","Independent Study","",Open,0,30,0
+13417,MATH,4993,010,IND,"1 - 3","Ken Ono","TBA","","Independent Study","",Open,0,30,0
+14258,MATH,4993,011,IND,"1 - 3","J.D. Quigley","TBA","","Independent Study","",Open,12,30,0
+21574,MATH,4993,012,IND,"1 - 3","Abdelmalek Abdesselam","TBA","","Independent Study","",Open,1,30,0
+21671,MATH,4993,013,IND,"1 - 3","Joshua Turner","TBA","","Independent Study","",Open,1,30,0
+20292,MATH,5653,001,Lecture,"3","Pavel Coupek","MoWe 2:00pm - 3:15pm","","Number Theory","",Open,11,25,0
+12950,MATH,5896,001,IND,"3","Juraj Foldes","TBA","","Supervised Study in Mathematics","",Open,2,30,0
+14350,MATH,5896,002,IND,"3","Peter Christopher Leslie Humphries","TBA","","Supervised Study in Mathematics","",Open,0,30,0
+21321,MATH,5896,003,IND,"3","Tai Melcher","TBA","","Supervised Study in Mathematics","",Open,1,30,0
+10467,MATH,7000,001,Lecture,"1 - 3","Brianna Kurtz","MoWe 12:30pm - 1:45pm","","Seminar on College Teaching","",Open,14,15,0
+11163,MATH,7340,001,Lecture,"3","Peter Christopher Leslie Humphries","TuTh 2:00pm - 3:15pm","","Complex Analysis I","",Open,13,18,0
+12731,MATH,7410,001,Lecture,"3","Yen Do","TuTh 12:30pm - 1:45pm","","Functional Analysis I","",Open,5,12,0
+10255,MATH,7751,001,Lecture,"3","Evangelia Gazaki","MoWe 2:00pm - 3:15pm","","Algebra I","",Open,17,18,0
+10256,MATH,7810,001,Lecture,"3","Julie Bergner","MoWeFr 11:00am - 11:50am","","Algebraic Topology II","",Open,7,12,0
+10927,MATH,7820,001,Lecture,"3","Thomas Koberda","TuTh 9:30am - 10:45am","","Differential Topology","",Open,15,18,0
+19692,MATH,7840,001,Lecture,"3","J.D. Quigley","MoWe 3:30pm - 4:45pm","","Homotopy Theory","",Open,8,12,0
+19689,MATH,8250,001,Lecture,"3","Aseel Farhat","MoWeFr 12:00pm - 12:50pm","","Partial Differential Equations","",Open,2,12,0
+19690,MATH,8320,001,Lecture,"3","Benjamin Hayes","TuTh 2:00pm - 3:15pm","","Operator Theory I, II","",Open,10,12,0
+21005,MATH,8510,001,Lecture,"3","Peter Christopher Leslie Humphries","TuTh 11:00am - 12:15pm","","Topics in Number Theory","Analytic Number Theory",Open,5,12,0
+13060,MATH,8710,001,Lecture,"3","You Qi","MoWe 2:00pm - 3:15pm","","Lie Algebras","",Open,7,12,0
+14135,MATH,8750,001,Lecture,"3","Slava Krushkal","TuTh 11:00am - 12:15pm","","Topology of Manifolds","",Open,4,12,0
+10257,MATH,8998,001,IND,"1 - 12","Peter Abramenko","TBA","","Non-Topical Research, Preparation for Research","",Open,0,50,0
+10258,MATH,8999,001,IND,"1 - 12","Zoran Grujic","TBA","","Non-Topical Research","",Open,0,50,0
+12497,MATH,8999,002,IND,"1 - 12","Ken Ono","TBA","","Non-Topical Research","",Open,0,50,0
+12418,MATH,9010,001,SEM,"1 - 3","Evangelia Gazaki","Fr 1:00pm - 1:50pm","","Ramanujan-Serre Seminar","",Open,7,18,0
+10468,MATH,9250,001,SEM,"3","Aseel Farhat","Tu 3:30pm - 5:30pm","","Harmonic Analysis and PDEs","",Open,2,20,0
+10469,MATH,9310,001,SEM,"3","Benjamin Hayes","Tu 3:30pm - 4:45pm","","Operator Theory Seminar","",Open,6,15,0
+10562,MATH,9360,001,Lecture,"3","Christian Gromoll","Fr 1:00pm - 3:00pm","","Probability Seminar","",Open,1,12,0
+11372,MATH,9410,001,SEM,"3","Andrei Rapinchuk","Tu 3:30pm - 6:00pm","","Galois-Grothendieck Seminar","",Open,4,22,0
+20579,MATH,9450,001,SEM,"3","Abdelmalek Abdesselam","We 2:00pm - 3:15pm","","Mathematical Physics Seminar","",Open,1,12,0
+10564,MATH,9820,001,SEM,"1 - 3","Thomas Mark","TuTh 2:00pm - 3:15pm","","Geometry and Topology Seminar","",Open,16,18,0
+10470,MATH,9950,001,SEM,"3","You Qi","WeFr 3:30pm - 4:45pm","","Algebra Seminar","",Open,3,18,0
+12496,MATH,9995,001,IND,"3 - 9","Evangelia Gazaki","TBA","","Independent Research","",Open,3,10,0
+11774,MATH,9995,002,IND,"3 - 9","Leonid Petrov","TBA","","Independent Research","",Open,2,10,0
+12927,MATH,9995,003,IND,"3 - 9","Mikhail Ershov","TBA","","Independent Research","",Open,0,30,0
+12931,MATH,9995,004,IND,"3 - 9","Benjamin Hayes","TBA","","Independent Research","",Open,2,30,0
+11084,MATH,9995,005,IND,"3 - 9","Thomas Mark","TBA","","Independent Research","",Open,1,20,0
+14338,MATH,9995,006,IND,"3 - 9","Peter Christopher Leslie Humphries","TBA","","Independent Research","",Open,0,30,0
+21548,MATH,9995,007,IND,"3 - 9","J.D. Quigley","TBA","","Independent Research","",Open,1,30,0
+11747,MATH,9995,018,IND,"3 - 9","David Sherman","TBA","","Independent Research","",Open,0,30,0
+12009,MATH,9995,019,IND,"3 - 9","Sara Maloni","TBA","","Independent Research","",Open,2,30,0
+12027,MATH,9995,020,IND,"3 - 9","Slava Krushkal","TBA","","Independent Research","",Open,1,30,0
+12067,MATH,9995,021,IND,"3 - 9","Tai Melcher","TBA","","Independent Research","",Open,0,30,0
+12489,MATH,9995,022,IND,"3 - 9","Julie Bergner","TBA","","Independent Research","",Open,2,30,0
+10259,MATH,9998,001,IND,"1 - 12","Peter Abramenko","TBA","","Non-Topical Research, Preparation for Doctoral Research","",Open,0,10,0
+10753,MATH,9998,002,IND,"1 - 12","Christian Gromoll","TBA","","Non-Topical Research, Preparation for Doctoral Research","",Open,0,30,0
+13316,MATH,9998,003,IND,"1 - 12","Sara Maloni","TBA","","Non-Topical Research, Preparation for Doctoral Research","",Open,0,30,0
+11117,MATH,9998,004,IND,"1 - 12","David Sherman","TBA","","Non-Topical Research, Preparation for Doctoral Research","",Open,0,30,0
+11119,MATH,9998,005,IND,"1 - 12","Tai Melcher","TBA","","Non-Topical Research, Preparation for Doctoral Research","",Open,0,30,0
+12546,MATH,9998,006,IND,"1 - 12","Benjamin Hayes","TBA","","Non-Topical Research, Preparation for Doctoral Research","",Open,3,30,0
+11764,MATH,9999,001,IND,"1 - 12","Jennifer Morse","TBA","","Non-Topical Research","",Open,3,10,0
+10642,MATH,9999,002,IND,"1 - 12","Christian Gromoll","TBA","","Non-Topical Research","",Open,0,40,0
+11733,MATH,9999,003,IND,"1 - 12","Thomas Koberda","TBA","","Non-Topical Research","",Open,4,10,0
+10643,MATH,9999,004,IND,"1 - 12","Nicholas Kuhn","TBA","","Non-Topical Research","",Open,0,40,0
+13313,MATH,9999,005,IND,"1 - 12","Peter Christopher Leslie Humphries","TBA","","Non-Topical Research","",Open,2,30,0
+10644,MATH,9999,008,IND,"1 - 12","Weiqiang Wang","TBA","","Non-Topical Research","",Open,1,40,0
+10810,MATH,9999,009,IND,"1 - 12","Thomas Mark","TBA","","Non-Topical Research","",Open,0,30,0
+10811,MATH,9999,010,IND,"1 - 12","Slava Krushkal","TBA","","Non-Topical Research","",Open,0,30,0
+10812,MATH,9999,011,IND,"1 - 12","Abdelmalek Abdesselam","TBA","","Non-Topical Research","",Open,0,30,0
+10813,MATH,9999,012,IND,"1 - 12","Peter Abramenko","TBA","","Non-Topical Research","",Open,0,30,0
+10814,MATH,9999,013,IND,"1 - 12","Andrei Rapinchuk","TBA","","Non-Topical Research","",Open,0,30,0
+10824,MATH,9999,015,IND,"1 - 12","David Sherman","TBA","","Non-Topical Research","",Open,0,30,0
+10978,MATH,9999,016,IND,"1 - 12","Mikhail Ershov","TBA","","Non-Topical Research","",Open,1,30,0
+11061,MATH,9999,017,IND,"1 - 12","Tai Melcher","TBA","","Non-Topical Research","",Open,0,30,0
+11112,MATH,9999,019,IND,"1 - 12","Juraj Foldes","TBA","","Non-Topical Research","",Open,1,30,0
+11262,MATH,9999,021,IND,"1 - 12","J.D. Quigley","TBA","","Non-Topical Research","",Open,0,30,0
+11370,MATH,9999,023,IND,"1 - 12","Aseel Farhat","TBA","","Non-Topical Research","",Open,0,30,0
+11534,MATH,9999,024,IND,"1 - 12","Julie Bergner","TBA","","Non-Topical Research","",Open,2,30,0
+11554,MATH,9999,025,IND,"1 - 12","Yen Do","TBA","","Non-Topical Research","",Open,0,30,0
+12442,MATH,9999,026,IND,"1 - 12","Ken Ono","TBA","","Non-Topical Research","",Open,1,30,0
+12522,MATH,9999,027,IND,"1 - 12","Christian Reidys","TBA","","Non-Topical Research","",Open,0,30,0
+21524,MATH,9999,028,IND,"1 - 12","Sara Maloni","TBA","","Non-Topical Research","",Open,4,30,0

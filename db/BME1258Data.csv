@@ -1,0 +1,147 @@
+ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor,Days,Room,Title,Topic,Status,Enrollment,EnrollmentLimit,Waitlist
+20568,BME,1501,001,Lecture,"1","Shannon Barker","Th 12:30pm - 1:20pm","","Special Topics","Intro to BME",Open,20,25,0
+15255,BME,2000,001,Lecture,"3","William Guilford","TuTh 3:30pm - 4:45pm","","Biomedical Engineering Design and Discovery","",Closed,52,50,0
+14748,BME,2101,001,Lecture,"3","Brian Helmke","TuTh 2:00pm - 3:15pm","","Physiology I for Engineers","",Open,64,65,0
+15602,BME,2102,001,Lecture,"3","Shannon Barker","TuTh 9:30am - 10:45am","","Physiology II","",Closed,69,65,0
+15258,BME,2104,001,Lecture,"3","Eli Zunder","TuTh 12:30pm - 1:45pm","","Cell and Molecular Biology for Engineers","",Open,52,65,0
+15257,BME,2220,001,Lecture,"3","Natasha Sheybani","TuTh 11:00am - 12:15pm","","Biomechanics","",Open,56,65,0
+14935,BME,2315,001,Lecture,"3","Shayn Peirce-Cottler, Sarah Groves","TuTh 9:30am - 10:45am","","Computational Biomedical Engineering","",Open,63,65,0
+14750,BME,3080,100,Lecture,"4","Timothy Allen, Brent French","Mo 11:00am - 11:50am","","Biomedical Engineering Integrated Design and Experimental Analysis (IDEAS)","",Open,96,120,0
+14751,BME,3080,101,Laboratory,"0","Timothy Allen","Tu 2:00pm - 6:00pm","","Biomedical Engineering Integrated Design and Experimental Analysis (IDEAS)","",Open,32,38,0
+14752,BME,3080,102,Laboratory,"0","Timothy Allen","We 2:00pm - 6:00pm","","Biomedical Engineering Integrated Design and Experimental Analysis (IDEAS)","",Closed,40,40,0
+14753,BME,3080,103,Laboratory,"0","Timothy Allen","Th 2:00pm - 6:00pm","","Biomedical Engineering Integrated Design and Experimental Analysis (IDEAS)","",Open,24,40,0
+15256,BME,3240,001,Lecture,"3","Chris Highley","TuTh 12:30pm - 1:45pm","","Biotransport","",Closed,65,65,0
+14749,BME,3310,001,Lecture,"3","Sepideh Dolatshahi","TuTh 11:00am - 12:15pm","","Biomedical Systems Analysis and Design","",Open,60,65,0
+14755,BME,4063,001,Lecture,"3","Timothy Allen","TuTh 9:30am - 10:45am","","Biomedical Engineering Capstone Design I","",Open,98,120,0
+20642,BME,4064,001,Lecture,"3","Timothy Allen","TBA","","Biomedical Engineering Capstone Design II","",Closed,1,1,0
+20007,BME,4290,001,Lecture,"3","Eli Zunder","MoWe 12:30pm - 1:45pm","","Stem Cell Engineering","",Open,17,32,0
+20013,BME,4360,001,Lecture,"3","Kristen Naegle","MoWe 2:00pm - 3:15pm","","Molecular Data Science","",Open,24,32,0
+16250,BME,4390,001,Lecture,"3","Mohammad Fallahi-Sichani","MoWe 12:30pm - 1:45pm","","Bioreaction Kinetics: Biomedical & Pharmacological Perspectives","",Open,39,40,0
+16258,BME,4414,001,Lecture,"3","Daniel Abebayehu, Tom Barker","MoWe 12:30pm - 1:45pm","","Biomaterials","",Open,32,75,0
+15674,BME,4550,001,Lecture,"3","Brian Helmke","MoWe 2:00pm - 3:15pm","","Special Topics in Biomedical Engineering","Mechanobiology",Open,20,40,0
+16267,BME,4550,002,Lecture,"3","David Chen, Kristin Bush","We 2:00pm - 2:50pm","","Special Topics in Biomedical Engineering","Medical Product Development",Closed,12,10,0
+21374,BME,4550,003,Lecture,"3","Kimberly Kelly","MoWe 9:30am - 10:45am","","Special Topics in Biomedical Engineering","Going Pro - Prof Dev for BME",Open,18,20,0
+15127,BME,4806,001,Lecture,"3","Brent French","WeFr 11:00am - 12:15pm","","Biomedical Applications of Genetic Engineering","",Open,15,24,0
+14754,BME,4995,001,IND,"1 - 3","William Guilford","TBA","","Biomedical Engineering Advanced Projects","",Open,12,13,0
+16478,BME,4995,002,IND,"1 - 3","Mohammad Fallahi-Sichani","TBA","","Biomedical Engineering Advanced Projects","",Open,2,30,0
+15403,BME,4995,003,IND,"1 - 3","Brian Helmke","TBA","","Biomedical Engineering Advanced Projects","",Open,1,30,0
+15315,BME,4995,004,IND,"1 - 3","George Christ","TBA","","Biomedical Engineering Advanced Projects","",Open,2,5,0
+16158,BME,4995,005,IND,"1 - 3","Steven Caliari","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+14927,BME,4995,006,IND,"1 - 3","Kevin Janes","TBA","","Biomedical Engineering Advanced Projects","",Open,2,5,0
+16148,BME,4995,007,IND,"1 - 3","Kristen Naegle","TBA","","Biomedical Engineering Advanced Projects","",Open,3,30,0
+14928,BME,4995,008,IND,"1 - 3","Shayn Peirce-Cottler","TBA","","Biomedical Engineering Advanced Projects","",Open,2,5,0
+14931,BME,4995,009,IND,"1 - 3","Jason Papin","TBA","","Biomedical Engineering Advanced Projects","",Open,0,10,0
+14963,BME,4995,010,IND,"1 - 3","Richard Price","TBA","","Biomedical Engineering Advanced Projects","",Open,0,5,0
+15005,BME,4995,011,IND,"1 - 3","Kimberly Kelly","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15317,BME,4995,012,IND,"1 - 3","Donald Griffin","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15349,BME,4995,013,IND,"1 - 3","Chris Highley","TBA","","Biomedical Engineering Advanced Projects","",Open,1,30,0
+16146,BME,4995,014,IND,"1 - 3","Tom Barker","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15441,BME,4995,015,IND,"1 - 3","Silvia Blemker","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15442,BME,4995,016,IND,"1 - 3","Kyle Lampe","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15458,BME,4995,017,IND,"1 - 3","Shawn Russell","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15460,BME,4995,018,IND,"1 - 3","Brent French","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+16010,BME,4995,019,IND,"1 - 3","David Chen","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15885,BME,4995,020,IND,"1 - 3","Sepideh Dolatshahi","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+15896,BME,4995,021,IND,"1 - 3","Natasha Sheybani","TBA","","Biomedical Engineering Advanced Projects","",Open,3,30,0
+21282,BME,4995,022,IND,"1 - 3","Shannon Barker","TBA","","Biomedical Engineering Advanced Projects","",Open,0,30,0
+21283,BME,4995,023,IND,"1 - 3","Jeffrey Saucerman","TBA","","Biomedical Engineering Advanced Projects","",Open,1,30,0
+21469,BME,4995,024,IND,"1 - 3","Alexander Klibanov","TBA","","Biomedical Engineering Advanced Projects","",Open,1,30,0
+21662,BME,4995,025,IND,"1 - 3","Kelsey Kubelick","TBA","","Biomedical Engineering Advanced Projects","",Open,1,30,0
+16269,BME,6001,001,Lecture,"2","Shayn Peirce-Cottler","MoWe 9:30am - 10:45am","","Cell and Molecular Physiology for Engineers","",Open,29,40,0
+16270,BME,6002,001,Lecture,"2","Shannon Barker","MoWe 9:30am - 10:45am","","Organ-Level Physiology for Engineers","",Open,29,40,0
+16272,BME,6004,001,Lecture,"2","Craig Meyer","MoWe 11:00am - 12:15pm","","Signals and Systems Analysis for Biomedical Applications","",Open,22,40,0
+20531,BME,6006,001,Lecture,"2","Mohammad Fallahi-Sichani","MoWe 11:00am - 12:15pm","","Biomedical Data Science and Analytics","",Open,24,40,0
+16319,BME,6056,001,Lecture,"1 - 2","Robert Perry","Mo 3:30pm - 4:45pm","","Going Pro, Professional Development in Biomedical Engineering","",Open,12,25,0
+15466,BME,6550,001,Lecture,"3","Robert Perry","TuTh 4:30pm - 5:45pm","","Special Topics in Biomedical Engineering","Clinical Technology",Open,12,15,0
+20015,BME,6550,002,Lecture,"3","Kristen Naegle","MoWe 2:00pm - 3:15pm","","Special Topics in Biomedical Engineering","Molecular Data Science",Open,2,3,0
+15991,BME,6550,003,Lecture,"3","Nikki Hastings","TuTh 8:00am - 10:45am","","Special Topics in Biomedical Engineering","Frontiers in Biotechnology I",Open,3,8,0
+20457,BME,6550,004,Lecture,"3","Eli Zunder","MoWe 12:30pm - 1:45pm","","Special Topics in Biomedical Engineering","Stem Cell Engineering",Open,6,10,0
+20485,BME,6550,005,Lecture,"3","David Chen, Kristin Bush","We 2:00pm - 2:50pm","","Special Topics in Biomedical Engineering","Med Prod Devlpmt",Open,2,6,0
+15144,BME,7806,001,Lecture,"3","Brent French","WeFr 11:00am - 12:15pm","","Biomedical Applications of Genetic Engineering","",Open,0,3,0
+15459,BME,8900,001,IND,"1 - 6","Donald Griffin","TBA","","Graduate Teaching Instruction","",Open,19,40,0
+15479,BME,8995,001,IND,"1 - 6","Robert Perry","TBA","","Supervised Project Research (GRAD STUDENTS ONLY)","",Open,11,30,0
+16334,BME,8995,002,IND,"1 - 6","Sepideh Dolatshahi","TBA","","Supervised Project Research (GRAD STUDENTS ONLY)","",Open,1,30,0
+16453,BME,8995,003,IND,"1 - 6","George Christ","TBA","","Supervised Project Research (GRAD STUDENTS ONLY)","",Open,0,30,0
+14756,BME,8999,001,IND,"1 - 12","Silvia Blemker","TBA","","Master's Research","",Open,0,50,0
+15831,BME,8999,002,IND,"1 - 12","Natasha Sheybani","TBA","","Master's Research","",Open,0,30,0
+16030,BME,8999,003,IND,"1 - 12","Daniel Abebayehu","TBA","","Master's Research","",Open,0,30,0
+15826,BME,8999,004,IND,"1 - 12","Nick Tsihlis","TBA","","Master's Research","",Open,0,30,0
+14768,BME,8999,005,IND,"1 - 12","Richard Price","TBA","","Master's Research","",Open,1,30,0
+16052,BME,8999,006,IND,"1 - 12","Aidong Zhang","TBA","","Master's Research","",Open,0,30,0
+14769,BME,8999,007,IND,"1 - 12","Craig Meyer","TBA","","Master's Research","",Open,1,30,0
+15210,BME,8999,008,IND,"1 - 12","G Miller","TBA","","Master's Research","",Open,2,30,0
+14815,BME,8999,009,IND,"1 - 12","Jason Papin","TBA","","Master's Research","",Open,2,30,0
+14817,BME,8999,010,IND,"1 - 12","Kimberly Kelly","TBA","","Master's Research","",Open,0,30,0
+16339,BME,8999,011,IND,"1 - 12","Merry Mani","TBA","","Master's Research","",Open,1,30,0
+14818,BME,8999,012,IND,"1 - 12","Frederick Epstein","TBA","","Master's Research","",Open,1,30,0
+14919,BME,8999,013,IND,"1 - 12","Brent French","TBA","","Master's Research","",Open,0,30,0
+16378,BME,8999,014,IND,"1 - 12","Mathews Jacob","TBA","","Master's Research","",Open,1,30,0
+16358,BME,8999,015,IND,"1 - 12","Hui Li","TBA","","Master's Research","",Open,0,30,0
+15695,BME,8999,016,IND,"1 - 12","Matthew Lazzara","TBA","","Master's Research","",Open,2,30,0
+15462,BME,8999,017,IND,"1 - 12","Kristen Naegle","TBA","","Master's Research","",Open,0,30,0
+14924,BME,8999,018,IND,"1 - 12","Shayn Peirce-Cottler","TBA","","Master's Research","",Open,1,30,0
+14925,BME,8999,019,IND,"1 - 12","Jeffrey Saucerman","TBA","","Master's Research","",Open,4,30,0
+15461,BME,8999,020,IND,"1 - 12","Sepideh Dolatshahi","TBA","","Master's Research","",Open,3,30,0
+16340,BME,8999,021,IND,"1 - 12","Kelsey Kubelick","TBA","","Master's Research","",Open,4,30,0
+16341,BME,8999,022,IND,"1 - 12","Sameer Bajikar","TBA","","Master's Research","",Open,3,30,0
+15025,BME,8999,023,IND,"1 - 12","Peter Kasson","TBA","","Master's Research","",Open,0,30,0
+15054,BME,8999,024,IND,"1 - 12","Mohammad Fallahi-Sichani","TBA","","Master's Research","",Open,4,30,0
+16342,BME,8999,025,IND,"1 - 12","John Platig","TBA","","Master's Research","",Open,1,30,0
+15143,BME,8999,026,IND,"1 - 12","George Christ","TBA","","Master's Research","",Open,1,30,0
+15157,BME,8999,027,IND,"1 - 12","Shawn Russell","TBA","","Master's Research","",Open,0,30,0
+15189,BME,8999,028,IND,"1 - 12","Eli Zunder","TBA","","Master's Research","",Open,1,30,0
+16356,BME,8999,029,IND,"1 - 12","Huan Bao","TBA","","Master's Research","",Open,0,30,0
+15249,BME,8999,030,IND,"1 - 12","Tom Barker","TBA","","Master's Research","",Open,1,30,0
+15250,BME,8999,031,IND,"1 - 12","Nathan Sheffield","TBA","","Master's Research","",Open,0,30,0
+15470,BME,8999,032,IND,"1 - 12","Liheng Cai","TBA","","Master's Research","",Open,0,30,0
+15303,BME,8999,033,IND,"1 - 12","Steven Caliari","TBA","","Master's Research","",Open,1,30,0
+15305,BME,8999,034,IND,"1 - 12","Donald Griffin","TBA","","Master's Research","",Open,1,30,0
+15351,BME,8999,035,IND,"1 - 12","Chris Highley","TBA","","Master's Research","",Open,1,30,0
+15327,BME,8999,036,IND,"1 - 12","Gustavo Rohde","TBA","","Master's Research","",Open,0,30,0
+21496,BME,8999,037,IND,"1 - 12","Huiwang Ai","TBA","","Master's Research","",Open,1,30,0
+15329,BME,8999,038,IND,"1 - 12","Philip Bourne","TBA","","Master's Research","",Open,1,30,0
+20014,BME,8999,039,IND,"1 - 12","Robert Perry","TBA","","Master's Research","",Open,0,30,0
+20932,BME,8999,040,IND,"1 - 12","Jinghang Xie","TBA","","Master's Research","",Open,1,30,0
+21229,BME,8999,041,IND,"1 - 12","Nikolay Dokholyan","TBA","","Master's Research","",Open,0,30,0
+15480,BME,9999,001,IND,"1 - 12","Steven Caliari","TBA","","Dissertation","",Open,6,30,0
+15337,BME,9999,002,IND,"1 - 12","Nathan Sheffield","TBA","","Dissertation","",Open,2,30,0
+14770,BME,9999,003,IND,"1 - 12","Frederick Epstein","TBA","","Dissertation","",Open,1,30,0
+16020,BME,9999,004,IND,"1 - 12","Nick Tsihlis","TBA","","Dissertation","",Open,2,30,0
+16066,BME,9999,005,IND,"1 - 12","Douglas DeSimone","TBA","","Dissertation","",Open,0,30,0
+14771,BME,9999,006,IND,"1 - 12","John Hossack","TBA","","Dissertation","",Open,1,30,0
+16114,BME,9999,007,IND,"1 - 12","Natasha Sheybani","TBA","","Dissertation","",Open,4,30,0
+15734,BME,9999,008,IND,"1 - 12","Liheng Cai","TBA","","Dissertation","",Open,0,30,0
+14773,BME,9999,009,IND,"1 - 12","Rebecca Pompano","TBA","","Dissertation","",Open,0,30,0
+16115,BME,9999,010,IND,"1 - 12","Scott Acton","TBA","","Dissertation","",Open,0,30,0
+14774,BME,9999,011,IND,"1 - 12","Shayn Peirce-Cottler","TBA","","Dissertation","",Open,3,30,0
+14775,BME,9999,012,IND,"1 - 12","Richard Price","TBA","","Dissertation","",Open,5,30,0
+15236,BME,9999,013,IND,"1 - 12","Tom Barker","TBA","","Dissertation","",Open,1,30,0
+16440,BME,9999,014,IND,"1 - 12","Matthew Wolf","TBA","","Dissertation","",Open,1,30,0
+15715,BME,9999,015,IND,"1 - 12","Gustavo Rohde","TBA","","Dissertation","",Open,1,30,0
+15713,BME,9999,016,IND,"1 - 12","Kristen Naegle","TBA","","Dissertation","",Open,6,30,0
+14813,BME,9999,017,IND,"1 - 12","Kevin Janes","TBA","","Dissertation","",Open,3,30,0
+14814,BME,9999,018,IND,"1 - 12","Jeffrey Saucerman","TBA","","Dissertation","",Open,4,30,0
+15641,BME,9999,019,IND,"1 - 12","Chris Highley","TBA","","Dissertation","",Open,1,30,0
+14816,BME,9999,020,IND,"1 - 12","Jason Papin","TBA","","Dissertation","",Open,3,30,0
+14819,BME,9999,021,IND,"1 - 12","Kimberly Kelly","TBA","","Dissertation","",Open,1,30,0
+15101,BME,9999,022,IND,"1 - 12","George Christ","TBA","","Dissertation","",Open,3,30,0
+15340,BME,9999,023,IND,"1 - 12","Eli Zunder","TBA","","Dissertation","",Open,0,30,0
+15343,BME,9999,024,IND,"1 - 12","Bryan Berger","TBA","","Dissertation","",Open,1,30,0
+15344,BME,9999,025,IND,"1 - 12","G Miller","TBA","","Dissertation","",Open,0,30,0
+15465,BME,9999,026,IND,"1 - 12","Donald Griffin","TBA","","Dissertation","",Open,5,30,0
+14820,BME,9999,027,IND,"1 - 12","Craig Meyer","TBA","","Dissertation","",Open,2,30,0
+15640,BME,9999,028,IND,"1 - 12","Sepideh Dolatshahi","TBA","","Dissertation","",Open,1,30,0
+15639,BME,9999,029,IND,"1 - 12","Kyle Lampe","TBA","","Dissertation","",Open,1,30,0
+14821,BME,9999,030,IND,"1 - 12","Brent French","TBA","","Dissertation","",Open,1,30,0
+21230,BME,9999,031,IND,"1 - 12","Nikolay Dokholyan","TBA","","Dissertation","",Open,0,30,0
+14988,BME,9999,032,IND,"1 - 12","Silvia Blemker","TBA","","Dissertation","",Open,4,30,0
+15120,BME,9999,033,IND,"1 - 12","Peter Kasson","TBA","","Dissertation","",Open,1,30,0
+15055,BME,9999,034,IND,"1 - 12","Mohammad Fallahi-Sichani","TBA","","Dissertation","",Open,3,30,0
+20782,BME,9999,035,IND,"1 - 12","Kelsey Kubelick","TBA","","Dissertation","",Open,0,30,0
+20783,BME,9999,036,IND,"1 - 12","John Platig","TBA","","Dissertation","",Open,0,30,0
+20784,BME,9999,037,IND,"1 - 12","Mathews Jacob","TBA","","Dissertation","",Open,1,30,0
+20785,BME,9999,038,IND,"1 - 12","Merry Mani","TBA","","Dissertation","",Open,0,30,0
+20806,BME,9999,039,IND,"1 - 12","Daniel Abebayehu","TBA","","Dissertation","",Open,4,30,0
+20930,BME,9999,040,IND,"1 - 12","Sameer Bajikar","TBA","","Dissertation","",Open,0,30,0
+20931,BME,9999,041,IND,"1 - 12","Jinghang Xie","TBA","","Dissertation","",Open,0,30,0
+21497,BME,9999,042,IND,"1 - 12","Huiwang Ai","TBA","","Dissertation","",Open,0,30,0
