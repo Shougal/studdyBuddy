@@ -137,6 +137,7 @@ INSERT INTO Enrollment VALUES
 -- STUDY GROUPS
 INSERT INTO StudyGroup (owner_computingID, term, mnemonic_num, description) VALUES
 ('abc1','Spring2025','CS4750','Database design collaboration'),
+('def3','Spring2025','CS4750','Database design collaboration'),
 ('xyz2','Spring2025','CS3240','Software project planning'),
 ('def3','Fall2025','CS3710','Cybersecurity case study'),
 ('jkl4','Fall2025','CS2100','Data structures review'),
