@@ -230,7 +230,7 @@ INSERT INTO Joins VALUES
 ('wxy7',11),
 ('zab8',12),
 ('cde9',13),
-('fgh0',14);
+('fgh0',14),
 ('abc1',2),
 ('abc1',3),
 ('abc1',4),
