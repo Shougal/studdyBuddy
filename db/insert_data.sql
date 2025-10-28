@@ -91,7 +91,7 @@ INSERT INTO Enrollment VALUES
 ('wxy7','CS3100','Spring2025'),
 ('zab8','CS4610','Spring2025'),
 ('cde9','CS1010','Fall2025'),
-('fgh0','CS2130','Spring2025');
+('fgh0','CS2130','Spring2025'),
 ('xyz2','CS4750','Spring2025'),
 ('def3','CS4750','Spring2025'),
 ('mno5','CS4750','Spring2025'),
