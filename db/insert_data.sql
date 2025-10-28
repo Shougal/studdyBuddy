@@ -205,7 +205,9 @@ INSERT INTO `Session` VALUES
 ('2025-11-17', '12:00', '13:30', 'Mechanical Engineering', '214', 17),
 ('2025-11-18', '10:00', '11:30', 'Mechanical Engineering', '215', 18),
 ('2025-11-19', '17:00', '18:30', 'Mechanical Engineering', '339', 19),
-('2025-11-20', '18:00', '19:30', 'Mechanical Engineering', '341', 20);
+('2025-11-20', '18:00', '19:30', 'Mechanical Engineering', '205', 20),
+('2025-11-20', '13:30', '14:00', 'Mechanical Engineering', '205', 21);
+
 
 -- JOINS
 INSERT INTO Joins VALUES
