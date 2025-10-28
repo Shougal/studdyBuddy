@@ -335,4 +335,9 @@ INSERT INTO Survey_Feedback (questionID, computingID, groupID, response) VALUES
 (1,'abc1',1,'5/5 - super productive'),
 (2,'xyz2',1,'yes'),
 (3,'xyz2',2,'no - too late in the day'),
-(1,'def3',3,'4/5 - helpful but long');
+(1,'def3',13,'4/5 - helpful but long'),
+(1,'pqr6',4,'4/5 - helpful but long'),
+(2,'stu7',16,'no'),
+(1,'qrs5',4,'3/5');
+
+
