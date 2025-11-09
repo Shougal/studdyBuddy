@@ -6,8 +6,6 @@ import Button from "../buttons/Button";
 import DateTimePicker from "./DateTimePicker";
 
 const CreateGroupForm = ({ courses, onSubmit }) => {
-  const [courses, setCourses] = useState([]);
-
   const [form, setForm] = useState({
     term: "Fall2024",
     mnemonic_num: "",
