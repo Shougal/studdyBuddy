@@ -3,38 +3,42 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Button from "./components/buttons/Button";
+import Navbar from "./components/layout/Navbar";
+import StudyGroupCard from "./components/cards/studyGroupCard";
+import Input from "./components/forms/Input";
+import UserForm from "./components/forms/UserForm";
+import CreateGroupForm from "./components/forms/CreateGroupForm";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
       <Button
         label="Hey there"
         size="medium"
         variant="primary"
         onClick={() => console.log("clicked")}
       />
+      <StudyGroupCard
+        date="nov 6"
+        mnemonic="cs3130"
+        building="rice"
+        start_time="9 am"
+        end_time="12pm"
+        capacity="2"
+        members="10"
+        onJoin={() => console.log("joined!")}
+      />
+      <div>
+        <section>
+          <UserForm />
+        </section>
+      </div>
+      <div>
+        <CreateGroupForm />
+      </div>
     </>
   );
 }
