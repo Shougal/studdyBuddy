@@ -4,8 +4,7 @@ import TextArea from "./TextArea";
 import Select from "./Select";
 import Button from "../buttons/Button";
 import DateTimePicker from "./DateTimePicker";
-
-const CreateGroupForm = ({ courses, onSubmit }) => {
+const CreateGroupForm = ({ courses = [], onSubmit, error }) => {
   const [form, setForm] = useState({
     term: "Fall2024",
     mnemonic_num: "",
@@ -26,10 +25,20 @@ const CreateGroupForm = ({ courses, onSubmit }) => {
       className="form-container"
       onSubmit={(e) => {
         e.preventDefault();
-        onSubmit(form);
+        if (typeof onSubmit === "function") {
+          onSubmit(form);
+        } else {
+          console.warn(
+            "CreateGroupForm: onSubmit prop is missing or not a function",
+            typeof onSubmit,
+            onSubmit
+          );
+        }
       }}
     >
       <h2>Create Study Group</h2>
+      {/* Error message display */}
+      {error && <p style={{ color: "red", fontWeight: "bold" }}>{error}</p>}
       <Input label="Term" name="term" value={form.term} readOnly />
       <Select
         label="Course"
