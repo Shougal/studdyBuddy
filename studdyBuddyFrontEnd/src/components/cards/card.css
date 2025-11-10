@@ -1,0 +1,76 @@
+/* .study-card {
+  background-color: #f5a623;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px;
+  width: 300px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+.study-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.descriptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.label {
+  font-weight: 700;
+  color: #4a90e2;
+} */
+
+.study-card {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.study-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Label text (e.g., "Course:", "Date:") */
+.label {
+  font-weight: 700;
+  color: #4a90e2;
+}
+
+/* Description box with glow */
+.descriptions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #fafafa;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.2); /* subtle blue glow */
+}
+
+.descriptions p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Make sure button aligns nicely within the flex container */
+.descriptions button {
+  margin-left: auto;
+}
