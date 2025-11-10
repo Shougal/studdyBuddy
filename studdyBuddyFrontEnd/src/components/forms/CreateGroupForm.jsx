@@ -4,7 +4,6 @@ import TextArea from "./TextArea";
 import Select from "./Select";
 import Button from "../buttons/Button";
 import DateTimePicker from "./DateTimePicker";
-
 const CreateGroupForm = ({ courses = [], onSubmit, error }) => {
   const [form, setForm] = useState({
     term: "Fall2024",

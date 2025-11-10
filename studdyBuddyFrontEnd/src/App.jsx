@@ -7,8 +7,8 @@ import Navbar from "./components/layout/Navbar";
 import StudyGroupCard from "./components/cards/studyGroupCard";
 import Input from "./components/forms/Input";
 import UserForm from "./components/forms/UserForm";
-
 import { CreateGroup } from "./pages/CreateGroup";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +39,7 @@ function App() {
       </div>
       <div>
         <CreateGroup />
+
       </div>
     </>
   );
