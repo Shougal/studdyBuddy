@@ -22,6 +22,7 @@ function App() {
         variant="primary"
         onClick={() => console.log("clicked")}
       />
+      
       <StudyGroupCard
         date="nov 6"
         mnemonic="cs3130"
