@@ -1,14 +1,21 @@
 .navbar {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
 }
+
 .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #4a90e2;
-  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }

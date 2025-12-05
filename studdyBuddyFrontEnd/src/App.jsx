@@ -1,47 +1,31 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Button from "./components/buttons/Button";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import StudyGroupCard from "./components/cards/studyGroupCard";
-import Input from "./components/forms/Input";
-import UserForm from "./components/forms/UserForm";
-import { CreateGroup } from "./pages/CreateGroup";
 
+// Pages
+import Home from "./pages/Home";
+import User from "./pages/User";
+import { CreateGroup } from "./pages/CreateGroup";
+import FindGroups from "./pages/FindGroups";
+import UserSchedule from "./pages/UserSchedule";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const handleLogout = () => {
+    console.log("User logged out");
+  };
 
   return (
-    <>
-      <Navbar />
-      <Button
-        label="Hey there"
-        size="medium"
-        variant="primary"
-        onClick={() => console.log("clicked")}
-      />
-      <StudyGroupCard
-        date="nov 6"
-        mnemonic="cs3130"
-        building="rice"
-        start_time="9 am"
-        end_time="12pm"
-        capacity="2"
-        members="10"
-        onJoin={() => console.log("joined!")}
-      />
-      <div>
-        <section>
-          <UserForm />
-        </section>
-      </div>
-      <div>
-        <CreateGroup />
+    <Router>
+      <Navbar onLogout={handleLogout} />
 
+      <div className="page-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/groups" element={<FindGroups />} />
+          <Route path="/schedule" element={<UserSchedule />} />
+          <Route path="/create-group" element={<CreateGroup />} />  {/* <-- FIX */}
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 
