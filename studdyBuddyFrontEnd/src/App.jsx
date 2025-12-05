@@ -29,7 +29,6 @@ function App() {
 
       <div className="page-container">
         <Routes>
-
           {/* Landing page if logged out, Home if logged in */}
           <Route path="/" element={user ? <Home /> : <Landing />} />
 
@@ -40,7 +39,6 @@ function App() {
 
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/signup" element={<SignUp />} />
-
         </Routes>
       </div>
     </Router>
