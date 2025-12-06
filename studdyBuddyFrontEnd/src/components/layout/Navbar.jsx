@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Button from "../buttons/Button";
 import "./layout.css";
 
-const Navbar = ({ onLogout }) => {
+const Navbar = ({ onLogout, user }) => {
+  if (!user) return null;
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
@@ -12,16 +13,7 @@ const Navbar = ({ onLogout }) => {
 
       <div className="nav-links">
 
-        {/* NEW AUTH BUTTONS */}
-        <Link to="/signup">
-          <Button label="Sign Up" size="small" />
-        </Link>
-
-        <Link to="/login">
-          <Button label="Login" size="small" />
-        </Link>
-
-        {/* EXISTING NAVIGATION */}
+        
         <Link to="/schedule">
           <Button label="My Courses" size="small" />
         </Link>
