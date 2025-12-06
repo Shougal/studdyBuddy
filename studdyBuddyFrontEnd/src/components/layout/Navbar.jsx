@@ -11,6 +11,17 @@ const Navbar = ({ onLogout }) => {
       </Link>
 
       <div className="nav-links">
+
+        {/* NEW AUTH BUTTONS */}
+        <Link to="/signup">
+          <Button label="Sign Up" size="small" />
+        </Link>
+
+        <Link to="/login">
+          <Button label="Login" size="small" />
+        </Link>
+
+        {/* EXISTING NAVIGATION */}
         <Link to="/schedule">
           <Button label="My Courses" size="small" />
         </Link>
