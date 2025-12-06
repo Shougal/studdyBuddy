@@ -9,11 +9,11 @@ require_once __DIR__ . '/../config/connect-db.php';
  * @return int new groupID 
  */
 function db_create_group(string $ownerID, string $term, string $mnemonic, ?string $desc): int {
-  global $db;
+  global $conn;
   $sql = "INSERT INTO StudyGroup(owner_computingID, term, mnemonic_num, description)
           VALUES (?, ?, ?, ?)";
-  $db->prepare($sql)->execute([$ownerID, $term, $mnemonic, $desc]);
-  return (int)$db->lastInsertId();
+  $conn->prepare($sql)->execute([$ownerID, $term, $mnemonic, $desc]);
+  return (int)$conn->lastInsertId();
 }
 
 /*
@@ -22,7 +22,7 @@ function db_create_group(string $ownerID, string $term, string $mnemonic, ?strin
  */
 
 function db_get_group(int $groupID): ?array {
-  global $db;
+  global $conn;
   $sql = "SELECT g.groupID, g.description, g.term, g.mnemonic_num,
                  u.name AS owner_name,
                  s.date, s.start_time, s.end_time, s.building, s.room_number,
@@ -31,7 +31,7 @@ function db_get_group(int $groupID): ?array {
           JOIN `User` u  ON u.computingID = g.owner_computingID
           LEFT JOIN `Session` s ON s.groupID = g.groupID
           WHERE g.groupID = ?";
-  $st = $db->prepare($sql);
+  $st = $conn->prepare($sql);
   $st->execute([$groupID]);
   $row = $st->fetch();
   return $row ?: null;
@@ -45,8 +45,8 @@ function db_get_group(int $groupID): ?array {
  * @param int    $offset page offset 
  * @return arrays rows per group 
  */
-function db_search_groups(string $q = '', string $termLike = '%', int $limit = 25, int $offset = 0): array {
-  global $db;
+function db_search_groups(string $q =  '', string $termLike = '%', int $limit = 25, int $offset = 0): array {
+  global $conn;
   $like = "%{$q}%";
   $sql = "SELECT g.groupID, c.mnemonic_num, c.name AS course_name,
                  g.description,
@@ -63,7 +63,7 @@ function db_search_groups(string $q = '', string $termLike = '%', int $limit = 2
           GROUP BY g.groupID
           ORDER BY s.date IS NULL, s.date, s.start_time
           LIMIT ? OFFSET ?";
-  $st = $db->prepare($sql);
+  $st = $conn->prepare($sql);
   $st->execute([$termLike, $like, $like, $limit, $offset]);
   return $st->fetchAll();
 }
@@ -74,9 +74,9 @@ function db_search_groups(string $q = '', string $termLike = '%', int $limit = 2
  */
 
 function db_update_group_description(int $groupID, string $ownerID, ?string $desc): int {
-  global $db;
+  global $conn;
   $sql = "UPDATE StudyGroup SET description = ? WHERE groupID = ? AND owner_computingID = ?";
-  $st  = $db->prepare($sql);
+  $st  = $conn->prepare($sql);
   $st->execute([$desc, $groupID, $ownerID]);
   return $st->rowCount();
 }
@@ -87,9 +87,9 @@ function db_update_group_description(int $groupID, string $ownerID, ?string $des
  * @return int affect rows (0 means not owner or not found)
  */
 function db_delete_group(int $groupID, string $ownerID): int {
-  global $db;
+  global $conn;
   $sql = "DELETE FROM StudyGroup WHERE groupID = ? AND owner_computingID = ?";
-  $st  = $db->prepare($sql);
+  $st  = $conn->prepare($sql);
   $st->execute([$groupID, $ownerID]);
   return $st->rowCount();
 }
