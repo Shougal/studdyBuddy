@@ -1,8 +1,8 @@
 <?php
 // api/handlers/users/login.php
-require_once __DIR__ . '/../../../config/connect-db.php';
-require_once __DIR__ . '/../../../queries/get_users.php';
-require_once __DIR__ . '/../../middleware.php';
+require_once __DIR__ . '/../../config/connect-db.php';
+require_once __DIR__ . '/../../queries/get_users.php';
+require_once __DIR__ . '/../middleware.php';
 
 header('Content-Type: application/json');
 
