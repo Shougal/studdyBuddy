@@ -93,6 +93,37 @@ if ($method === 'DELETE' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $
 }
 
 
+// MEMBERSHIP ROUTES
+
+// Join group
+if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/join$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+// Leave group
+if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/leave$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+// Is member?
+if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/isMember$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+// User's group list
+if ($method === "GET" && preg_match("#^{$basePrefix}/users/([^/]+)/groups$#", $uri, $matches)) {
+    $_GET['computingID'] = $matches[1];
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+
 http_response_code(404);
 header('Content-Type: application/json');
 echo json_encode(["error" => "Endpoint not found", "path" => $uri]);
