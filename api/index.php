@@ -44,7 +44,17 @@ if ($method === 'GET' && preg_match("#^{$basePrefix}/users/([^/]+)$#", $uri, $ma
     exit;
 }
 
-// TODO: Here we'll add all other routes (offerings, groups, etc.)
+// COURSE OFFERINGS
+if ($uri === "$basePrefix/offerings") {
+    require_once __DIR__ . "/handlers/offering.php";
+    exit;
+}
+
+if ($uri === "$basePrefix/enroll") {
+    require_once __DIR__ . "/handlers/offering.php";
+    exit;
+}
+
 
 http_response_code(404);
 header('Content-Type: application/json');
