@@ -12,9 +12,9 @@ require_once __DIR__ . '/../config/connect-db.php';
  * Returns user-friendly status
  */
 function db_join_group(string $computingID, int $groupID): array {
-  global $db;
+  global $conn;
   try {
-    $db->prepare("INSERT INTO Joins(computingID, groupID) VALUES (?, ?)")
+    $conn->prepare("INSERT INTO Joins(computingID, groupID) VALUES (?, ?)")
        ->execute([$computingID, $groupID]);
     return ['ok' => true, 'msg' => 'Joined'];
   } catch (PDOException $e) {
@@ -28,8 +28,8 @@ function db_join_group(string $computingID, int $groupID): array {
  * @return int number of rows deleted (0 means not a member)
  */
 function db_leave_group(string $computingID, int $groupID): int {
-  global $db;
-  $st = $db->prepare("DELETE FROM Joins WHERE computingID = ? AND groupID = ?");
+  global $conn;
+  $st = $conn->prepare("DELETE FROM Joins WHERE computingID = ? AND groupID = ?");
   $st->execute([$computingID, $groupID]);
   return $st->rowCount();
 }
@@ -40,8 +40,8 @@ function db_leave_group(string $computingID, int $groupID): int {
  * @return bool
  */
 function db_is_member(string $computingID, int $groupID): bool {
-  global $db;
-  $st = $db->prepare("SELECT 1 FROM Joins WHERE computingID = ? AND groupID = ?");
+  global $conn;
+  $st = $conn->prepare("SELECT 1 FROM Joins WHERE computingID = ? AND groupID = ?");
   $st->execute([$computingID, $groupID]);
   return (bool)$st->fetchColumn();
 }
@@ -52,7 +52,7 @@ function db_is_member(string $computingID, int $groupID): bool {
  * @return array rows per membership
  */
 function db_my_groups(string $computingID): array {
-  global $db;
+  global $conn;
   $sql = "SELECT g.groupID, c.mnemonic_num, c.name AS course_name,
                  s.date, s.start_time, s.end_time, s.building, s.room_number,
                  g.description
@@ -62,7 +62,7 @@ function db_my_groups(string $computingID): array {
           LEFT JOIN `Session` s ON s.groupID = g.groupID
           WHERE j.computingID = ?
           ORDER BY s.date, s.start_time";
-  $st = $db->prepare($sql);
+  $st = $conn->prepare($sql);
   $st->execute([$computingID]);
   return $st->fetchAll();
 }

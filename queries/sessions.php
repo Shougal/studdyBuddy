@@ -15,11 +15,11 @@ require_once __DIR__ . '/../config/connect-db.php';
  * 
  */
 function db_create_session(int $groupID, string $date, string $start, string $end, string $building, string $room): array {
-  global $db;
+  global $conn;
   try {
     $sql = "INSERT INTO Session(date, start_time, end_time, building, room_number, groupID)
             VALUES (?, ?, ?, ?, ?, ?)";
-    $db->prepare($sql)->execute([$date, $start, $end, $building, $room, $groupID]);
+    $conn->prepare($sql)->execute([$date, $start, $end, $building, $room, $groupID]);
     return ['ok' => true];
   } catch (PDOException $e) {
     return ['ok' => false, 'error' => $e->getMessage()]; // trigger/FK message
@@ -32,12 +32,12 @@ function db_create_session(int $groupID, string $date, string $start, string $en
  * Note: overlap trigger still applies on update
  */
 function db_reschedule_session(int $groupID, string $date, string $start, string $end, string $building, string $room): array {
-  global $db;
+  global $conn;
   try {
     $sql = "UPDATE `Session`
             SET date = ?, start_time = ?, end_time = ?, building = ?, room_number = ?
             WHERE groupID = ?";
-    $db->prepare($sql)->execute([$date, $start, $end, $building, $room, $groupID]);
+    $conn->prepare($sql)->execute([$date, $start, $end, $building, $room, $groupID]);
     return ['ok' => true];
   } catch (PDOException $e) {
     return ['ok' => false, 'error' => $e->getMessage()];
@@ -50,8 +50,8 @@ function db_reschedule_session(int $groupID, string $date, string $start, string
  * @return ?array or null if no session yet
  */
 function db_get_session_by_group(int $groupID): ?array {
-  global $db;
-  $st = $db->prepare("SELECT date, start_time, end_time, building, room_number FROM `Session` WHERE groupID = ?");
+  global $conn;
+  $st = $conn->prepare("SELECT date, start_time, end_time, building, room_number FROM `Session` WHERE groupID = ?");
   $st->execute([$groupID]);
   $row = $st->fetch();
   return $row ?: null;
