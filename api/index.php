@@ -124,6 +124,22 @@ if ($method === "GET" && preg_match("#^{$basePrefix}/users/([^/]+)/groups$#", $u
 }
 
 
+// ROOM MANAGEMENT & AVAILABILITY ROUTES
+
+
+// Create room (admin tool)
+if ($method === "POST" && $uri === "$basePrefix/rooms") {
+    require __DIR__ . "/handlers/rooms.php";
+    exit;
+}
+
+// Find available rooms
+if ($method === "GET" && $uri === "$basePrefix/rooms/free") {
+    require __DIR__ . "/handlers/rooms.php";
+    exit;
+}
+
+
 http_response_code(404);
 header('Content-Type: application/json');
 echo json_encode(["error" => "Endpoint not found", "path" => $uri]);
