@@ -56,6 +56,43 @@ if ($uri === "$basePrefix/enroll") {
 }
 
 
+// STUDY GROUP ROUTES
+
+
+// 1️)POST /api/groups   — Create group
+if ($method === 'POST' && $uri === "$basePrefix/groups") {
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 2)GET /api/groups     — Search groups (no ID in path)
+if ($method === 'GET' && $uri === "$basePrefix/groups") {
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 3️)GET /api/groups/:id — Group details
+if ($method === 'GET' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 4) PATCH /api/groups/:id — Update description (owner only)
+if ($method === 'PATCH' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 5️) DELETE /api/groups/:id — Delete group (owner only)
+if ($method === 'DELETE' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+
 http_response_code(404);
 header('Content-Type: application/json');
 echo json_encode(["error" => "Endpoint not found", "path" => $uri]);
