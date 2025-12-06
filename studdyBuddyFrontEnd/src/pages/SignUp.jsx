@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -27,31 +29,28 @@ const SignUp = () => {
     setError("");
     setMessage("");
     setIsSubmitting(true);
-
+  
     try {
-      // For now: just log it so the page works
-      console.log("Sign-up form submitted:", form);
-
-      // 🔜 When your friend’s API is ready, you’ll replace the log with:
-      //
-      // const response = await fetch("http://localhost/studdyBuddy/api/users", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify({
-      //     computingID: form.computingID,
-      //     name: form.name,
-      //     year: Number(form.year),
-      //     password: form.password,
-      //   }),
-      // });
-      // const data = await response.json();
-      // if (!response.ok || data.error) {
-      //   setError(data.error || "Could not create account.");
-      //   return;
-      // }
-
+      const response = await axios.post(
+        "http://localhost/studdyBuddy/api/users",
+        {
+          computingID: form.computingID,
+          name: form.name,
+          year: Number(form.year),
+          password: form.password,
+        }
+      );
+  
+      const data = response.data;
+  
+      if (!data.ok) {
+        setError(data.error || "Could not create account.");
+        return;
+      }
+  
       setMessage("Account created! Redirecting to login…");
       setTimeout(() => navigate("/login"), 800);
+  
     } catch (err) {
       console.error(err);
       setError("Something went wrong. Please try again.");
@@ -59,6 +58,7 @@ const SignUp = () => {
       setIsSubmitting(false);
     }
   };
+  
 
   return (
     <div

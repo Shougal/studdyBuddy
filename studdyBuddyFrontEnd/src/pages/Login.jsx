@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Login = ({ onLogin }) => {
   const [computingID, setComputingID] = useState("");
@@ -15,38 +16,34 @@ const Login = ({ onLogin }) => {
     setIsSubmitting(true);
 
     try {
-      // 🔴 TODO: confirm the actual backend URL with your friend
-      // If using XAMPP + PHP, it might be something like:
-      // "http://localhost/studdyBuddy/pages/login.php"
-      const response = await fetch("/pages/login.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      const response = await axios.post(
+        "http://localhost/studdyBuddy/api/login",
+        {
           computingID,
           password,
-        }),
-      });
-
-      const data = await response.json().catch(() => ({}));
-
-      if (!response.ok || data.error) {
-        setError(data.error || "Invalid computing ID or password.");
-      } else {
-        // Example: backend returns { user: {...} }
-        const user = data.user || { computingID };
-
-        // save in parent state (and maybe localStorage if you want)
-        if (onLogin) {
-          onLogin(user);
+        },
+        {
+          withCredentials: true, // allow PHP sessions
         }
+      );
 
-        navigate("/"); // go to Home/My Courses
+      const data = response.data;
+
+      // Backend: { ok: true, msg: ... }
+      if (!data.ok) {
+        setError(data.error || "Invalid computing ID or password.");
+        return;
       }
+
+      // Login successful!
+      const user = { computingID };
+
+      if (onLogin) onLogin(user);
+
+      navigate("/"); // home
     } catch (err) {
       console.error(err);
-      setError("Network error. Please try again.");
+      setError("Network error or invalid credentials.");
     } finally {
       setIsSubmitting(false);
     }
@@ -56,7 +53,10 @@ const Login = ({ onLogin }) => {
     <div className="page" style={{ maxWidth: 400, margin: "0 auto", padding: "2rem" }}>
       <h2>Log In</h2>
 
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginTop: "1rem" }}>
+      <form
+        onSubmit={handleSubmit}
+        style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginTop: "1rem" }}
+      >
         <label>
           Computing ID
           <input
@@ -85,9 +85,7 @@ const Login = ({ onLogin }) => {
       </form>
 
       {error && (
-        <p style={{ color: "red", marginTop: "0.75rem" }}>
-          {error}
-        </p>
+        <p style={{ color: "red", marginTop: "0.75rem" }}>{error}</p>
       )}
     </div>
   );
