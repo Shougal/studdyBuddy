@@ -28,18 +28,6 @@ $name        = $data['name'];
 $year        = $data['year'] ?? null;   // can be null
 $password    = $data['password'];
 
-// try {
-//     db_create_user($computingID, $name, $year, $password);
-//     http_response_code(201);
-//     echo json_encode(["ok" => true, "msg" => "User created successfully"]);
-// } catch (PDOException $e) {
-//     http_response_code(500); // internal server error
-//     echo "internal error";
-//     echo json_encode([
-//         "error" => $e->getMessage(),
-//         "code" => $e->getCode()
-//     ]);
-// }
 
 error_log("STEP 1: Handler started");
 
