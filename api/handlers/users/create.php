@@ -6,8 +6,10 @@ require_once __DIR__ . '/../../../queries/get_users.php';
 
 header('Content-Type: application/json');
 
+
 $raw = file_get_contents("php://input");
 $data = json_decode($raw, true);
+
 
 if (!is_array($data)) {
     http_response_code(400);
@@ -26,12 +28,30 @@ $name        = $data['name'];
 $year        = $data['year'] ?? null;   // can be null
 $password    = $data['password'];
 
+// try {
+//     db_create_user($computingID, $name, $year, $password);
+//     http_response_code(201);
+//     echo json_encode(["ok" => true, "msg" => "User created successfully"]);
+// } catch (PDOException $e) {
+//     http_response_code(500); // internal server error
+//     echo "internal error";
+//     echo json_encode([
+//         "error" => $e->getMessage(),
+//         "code" => $e->getCode()
+//     ]);
+// }
+
+error_log("STEP 1: Handler started");
+
 try {
+    error_log("STEP 2: Calling db_create_user");
     db_create_user($computingID, $name, $year, $password);
+    error_log("STEP 3: Insert success");
     http_response_code(201);
     echo json_encode(["ok" => true, "msg" => "User created successfully"]);
+
 } catch (PDOException $e) {
-    // likely duplicate PK
-    http_response_code(409);
-    echo json_encode(["error" => "User already exists"]);
+    error_log("STEP 4: PDO EXCEPTION: " . $e->getMessage());
+    http_response_code(500);
+    echo json_encode(["error" => $e->getMessage()]);
 }
