@@ -16,6 +16,7 @@ $password = '';
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     // echo "Connected successfully to the database!";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
