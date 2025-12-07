@@ -140,6 +140,31 @@ if ($method === "GET" && $uri === "$basePrefix/rooms/free") {
 }
 
 
+// SESSION SCHEDULING ROUTES
+
+
+// Create session for group
+if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/sessions.php";
+    exit;
+}
+
+// Reschedule session
+if ($method === "PATCH" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/sessions.php";
+    exit;
+}
+
+// Get session info
+if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/sessions.php";
+    exit;
+}
+
+
 http_response_code(404);
 header('Content-Type: application/json');
 echo json_encode(["error" => "Endpoint not found", "path" => $uri]);
