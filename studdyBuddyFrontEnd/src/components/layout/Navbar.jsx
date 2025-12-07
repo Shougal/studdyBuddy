@@ -2,9 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../buttons/Button";
 import "./layout.css";
+import api from "../../services/api";
 
 const Navbar = ({ onLogout, user }) => {
   if (!user) return null;
+  
+  const handleLogout = async () => {
+    try {
+      await api.post("/users/logout");  
+    } catch (err) {
+      console.error("Logout failed:", err);
+    }
+
+    onLogout();      
+    navigate("/");  
+  };
+  
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
