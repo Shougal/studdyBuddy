@@ -1,10 +1,13 @@
+//navbar.jsx
+
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../buttons/Button";
 import "./layout.css";
 import api from "../../services/api";
 
 const Navbar = ({ onLogout, user }) => {
+  const navigate = useNavigate();
   if (!user) return null;
   
   const handleLogout = async () => {
@@ -15,7 +18,7 @@ const Navbar = ({ onLogout, user }) => {
     }
 
     onLogout();      
-    navigate("/");  
+    navigate("/", { replace: true });
   };
   
   return (
@@ -43,7 +46,7 @@ const Navbar = ({ onLogout, user }) => {
           label="Logout"
           size="small"
           variant="secondary"
-          onClick={onLogout}
+          onClick={handleLogout}
         />
       </div>
     </nav>

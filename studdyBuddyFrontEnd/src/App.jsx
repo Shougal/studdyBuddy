@@ -1,3 +1,4 @@
+//app.jsx
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
@@ -36,7 +37,6 @@ function App() {
           <Route path="/schedule" element={<UserSchedule />} />
           <Route path="/create-group" element={<CreateGroup />} />
           <Route path="/user" element={<User />} />
-
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
