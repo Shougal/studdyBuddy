@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
-
+import { signup as signupRequest } from "../services/testAPI";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -29,36 +28,29 @@ const SignUp = () => {
     setError("");
     setMessage("");
     setIsSubmitting(true);
-  
+
     try {
-      const response = await axios.post(
-        "http://localhost/studdyBuddy/api/users",
-        {
-          computingID: form.computingID,
-          name: form.name,
-          year: Number(form.year),
-          password: form.password,
-        }
-      );
-  
+      // call shared axios helper
+      const response = await signupRequest(form);
       const data = response.data;
-  
+
       if (!data.ok) {
         setError(data.error || "Could not create account.");
-        return;
+      } else {
+        setMessage("Account created! Redirecting to login…");
+        setTimeout(() => navigate("/login"), 800);
       }
-  
-      setMessage("Account created! Redirecting to login…");
-      setTimeout(() => navigate("/login"), 800);
-  
     } catch (err) {
       console.error(err);
-      setError("Something went wrong. Please try again.");
+      if (err.response?.data?.error) {
+        setError(err.response.data.error);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
     } finally {
       setIsSubmitting(false);
     }
   };
-  
 
   return (
     <div

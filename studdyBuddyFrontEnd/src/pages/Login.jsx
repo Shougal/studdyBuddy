@@ -1,53 +1,44 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { login as loginRequest } from "../services/testAPI";
 
 const Login = ({ onLogin }) => {
-  const [computingID, setComputingID] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setIsSubmitting(true);
-
-    try {
-      const response = await axios.post(
-        "http://localhost/studdyBuddy/api/login",
-        {
-          computingID,
-          password,
-        },
-        {
-          withCredentials: true, // allow PHP sessions
+    const [computingID, setComputingID] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
+  
+    const navigate = useNavigate();
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setError("");
+      setIsSubmitting(true);
+  
+      try {
+        // use the shared axios instance + helper
+        const response = await loginRequest(computingID, password);
+        const data = response.data;
+  
+        if (!data.ok) {
+          // backend sends ok:false + error message for bad login
+          setError(data.error || "Invalid computing ID or password.");
+        } else {
+          const user = data.user || { computingID }; // temp user object
+          if (onLogin) onLogin(user);
+          navigate("/"); // go to Home
         }
-      );
-
-      const data = response.data;
-
-      // Backend: { ok: true, msg: ... }
-      if (!data.ok) {
-        setError(data.error || "Invalid computing ID or password.");
-        return;
+      } catch (err) {
+        console.error(err);
+        if (err.response?.data?.error) {
+          setError(err.response.data.error);
+        } else {
+          setError("Network error. Please try again.");
+        }
+      } finally {
+        setIsSubmitting(false);
       }
-
-      // Login successful!
-      const user = { computingID };
-
-      if (onLogin) onLogin(user);
-
-      navigate("/"); // home
-    } catch (err) {
-      console.error(err);
-      setError("Network error or invalid credentials.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    };
 
   return (
     <div className="page" style={{ maxWidth: 400, margin: "0 auto", padding: "2rem" }}>
