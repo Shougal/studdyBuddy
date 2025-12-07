@@ -44,7 +44,142 @@ if ($method === 'GET' && preg_match("#^{$basePrefix}/users/([^/]+)$#", $uri, $ma
     exit;
 }
 
-// TODO: Here we'll add all other routes (offerings, groups, etc.)
+// COURSE OFFERINGS
+if ($uri === "$basePrefix/offerings") {
+    require_once __DIR__ . "/handlers/offering.php";
+    exit;
+}
+
+if ($uri === "$basePrefix/enroll") {
+    require_once __DIR__ . "/handlers/offering.php";
+    exit;
+}
+
+
+// STUDY GROUP ROUTES
+
+
+// 1️)POST /api/groups   — Create group
+if ($method === 'POST' && $uri === "$basePrefix/groups") {
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 2)GET /api/groups     — Search groups (no ID in path)
+if ($method === 'GET' && $uri === "$basePrefix/groups") {
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 3️)GET /api/groups/:id — Group details
+if ($method === 'GET' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 4) PATCH /api/groups/:id — Update description (owner only)
+if ($method === 'PATCH' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+// 5️) DELETE /api/groups/:id — Delete group (owner only)
+if ($method === 'DELETE' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . '/handlers/groups.php';
+    exit;
+}
+
+
+// MEMBERSHIP ROUTES
+
+// Join group
+if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/join$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+// Leave group
+if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/leave$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+// Is member?
+if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/isMember$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+// User's group list
+if ($method === "GET" && preg_match("#^{$basePrefix}/users/([^/]+)/groups$#", $uri, $matches)) {
+    $_GET['computingID'] = $matches[1];
+    require __DIR__ . "/handlers/membership.php";
+    exit;
+}
+
+
+// ROOM MANAGEMENT & AVAILABILITY ROUTES
+
+
+// Create room (admin tool)
+if ($method === "POST" && $uri === "$basePrefix/rooms") {
+    require __DIR__ . "/handlers/rooms.php";
+    exit;
+}
+
+// Find available rooms
+if ($method === "GET" && $uri === "$basePrefix/rooms/free") {
+    require __DIR__ . "/handlers/rooms.php";
+    exit;
+}
+
+
+// SESSION SCHEDULING ROUTES
+
+
+// Create session for group
+if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/sessions.php";
+    exit;
+}
+
+// Reschedule session
+if ($method === "PATCH" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/sessions.php";
+    exit;
+}
+
+// Get session info
+if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
+    $_GET['groupID'] = intval($matches[1]);
+    require __DIR__ . "/handlers/sessions.php";
+    exit;
+}
+
+// SURVEY 
+if ($method === 'GET' && $uri === "$basePrefix/survey/questions") {
+    require __DIR__ . "/handlers/survey/questions.php";
+    exit;
+}
+
+if ($method === 'POST' && $uri === "$basePrefix/survey/feedback") {
+    require __DIR__ . "/handlers/survey/feedback.php";
+    exit;
+}
+
+if ($method === 'GET' && preg_match("#^{$basePrefix}/survey/groups/(\d+)/summary$#", $uri, $m)) {
+    $groupID = (int)$m[1];
+    require __DIR__ . "/handlers/survey/summary.php";
+    exit;
+}
 
 http_response_code(404);
 header('Content-Type: application/json');

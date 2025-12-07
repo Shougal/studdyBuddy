@@ -48,6 +48,11 @@ function db_get_group(int $groupID): ?array {
 function db_search_groups(string $q =  '', string $termLike = '%', int $limit = 25, int $offset = 0): array {
   global $conn;
   $like = "%{$q}%";
+
+  // Ensure integers for SQL injection safety
+  $limit = max(1, (int)$limit);
+  $offset = max(0, (int)$offset);
+
   $sql = "SELECT g.groupID, c.mnemonic_num, c.name AS course_name,
                  g.description,
                  s.date, s.start_time, s.end_time, s.building, s.room_number,
@@ -62,9 +67,9 @@ function db_search_groups(string $q =  '', string $termLike = '%', int $limit = 
             AND (c.mnemonic_num LIKE ? OR g.description LIKE ?)
           GROUP BY g.groupID
           ORDER BY s.date IS NULL, s.date, s.start_time
-          LIMIT ? OFFSET ?";
+          LIMIT $limit OFFSET $offset";
   $st = $conn->prepare($sql);
-  $st->execute([$termLike, $like, $like, $limit, $offset]);
+  $st->execute([$termLike, $like, $like]);
   return $st->fetchAll();
 }
 /*
