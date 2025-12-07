@@ -164,6 +164,22 @@ if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $u
     exit;
 }
 
+// SURVEY 
+if ($method === 'GET' && $uri === "$basePrefix/survey/questions") {
+    require __DIR__ . "/handlers/survey/questions.php";
+    exit;
+}
+
+if ($method === 'POST' && $uri === "$basePrefix/survey/feedback") {
+    require __DIR__ . "/handlers/survey/feedback.php";
+    exit;
+}
+
+if ($method === 'GET' && preg_match("#^{$basePrefix}/survey/groups/(\d+)/summary$#", $uri, $m)) {
+    $groupID = (int)$m[1];
+    require __DIR__ . "/handlers/survey/summary.php";
+    exit;
+}
 
 http_response_code(404);
 header('Content-Type: application/json');
