@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { signup as signupRequest } from "../services/testAPI";
+import api from "../services/api";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -17,10 +17,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -30,18 +27,21 @@ const SignUp = () => {
     setIsSubmitting(true);
 
     try {
-      // call shared axios helper
-      const response = await signupRequest(form);
+        const response = await api.post("/users", form);
+
       const data = response.data;
 
-      if (!data.ok) {
-        setError(data.error || "Could not create account.");
+      if (data.error) {
+        setError(data.error);
+      } else if (!data.ok) {
+        setError("Could not create account.");
       } else {
         setMessage("Account created! Redirecting to login…");
         setTimeout(() => navigate("/login"), 800);
       }
     } catch (err) {
       console.error(err);
+
       if (err.response?.data?.error) {
         setError(err.response.data.error);
       } else {
@@ -53,69 +53,30 @@ const SignUp = () => {
   };
 
   return (
-    <div
-      className="page"
-      style={{ maxWidth: 500, margin: "0 auto", padding: "2rem" }}
-    >
+    <div className="page" style={{ maxWidth: 500, margin: "0 auto", padding: "2rem" }}>
       <h2>Sign Up</h2>
-
       <form
         onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "0.75rem",
-          marginTop: "1rem",
-        }}
+        style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginTop: "1rem" }}
       >
         <label>
           Computing ID
-          <input
-            type="text"
-            name="computingID"
-            value={form.computingID}
-            onChange={handleChange}
-            placeholder="abc1d"
-            required
-          />
+          <input name="computingID" value={form.computingID} onChange={handleChange} required />
         </label>
 
         <label>
           Name
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Anna Will"
-            required
-          />
+          <input name="name" value={form.name} onChange={handleChange} required />
         </label>
 
         <label>
           Year
-          <input
-            type="number"
-            name="year"
-            value={form.year}
-            onChange={handleChange}
-            placeholder="3"
-            min="1"
-            max="4"
-            required
-          />
+          <input type="number" name="year" value={form.year} onChange={handleChange} min="1" max="4" />
         </label>
 
         <label>
           Password
-          <input
-            type="password"
-            name="password"
-            value={form.password}
-            onChange={handleChange}
-            placeholder="••••••••"
-            required
-          />
+          <input type="password" name="password" value={form.password} onChange={handleChange} required />
         </label>
 
         <button type="submit" disabled={isSubmitting}>
@@ -123,12 +84,8 @@ const SignUp = () => {
         </button>
       </form>
 
-      {error && (
-        <p style={{ color: "red", marginTop: "0.75rem" }}>{error}</p>
-      )}
-      {message && (
-        <p style={{ color: "green", marginTop: "0.75rem" }}>{message}</p>
-      )}
+      {error && <p style={{ color: "red", marginTop: "0.75rem" }}>{error}</p>}
+      {message && <p style={{ color: "green", marginTop: "0.75rem" }}>{message}</p>}
     </div>
   );
 };

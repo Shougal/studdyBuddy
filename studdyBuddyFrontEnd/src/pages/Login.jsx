@@ -1,44 +1,51 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { login as loginRequest } from "../services/testAPI";
+import api from "../services/api";
 
 const Login = ({ onLogin }) => {
-    const [computingID, setComputingID] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const [isSubmitting, setIsSubmitting] = useState(false);
-  
-    const navigate = useNavigate();
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setError("");
-      setIsSubmitting(true);
-  
-      try {
-        // use the shared axios instance + helper
-        const response = await loginRequest(computingID, password);
-        const data = response.data;
-  
-        if (!data.ok) {
-          // backend sends ok:false + error message for bad login
-          setError(data.error || "Invalid computing ID or password.");
-        } else {
-          const user = data.user || { computingID }; // temp user object
-          if (onLogin) onLogin(user);
-          navigate("/"); // go to Home
-        }
-      } catch (err) {
-        console.error(err);
-        if (err.response?.data?.error) {
-          setError(err.response.data.error);
-        } else {
-          setError("Network error. Please try again.");
-        }
-      } finally {
-        setIsSubmitting(false);
+  const [computingID, setComputingID] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setIsSubmitting(true);
+
+    try {
+      const response = await api.post("/login", {
+        computingID,
+        password,
+      });
+
+      const data = response.data;
+
+      // backend uses ok:true only on success
+      if (!data.ok) {
+        setError(data.error || "Invalid computing ID or password.");
+      } else {
+        const user = data.user;
+
+        if (onLogin) onLogin(user);
+
+        navigate("/");
       }
-    };
+    } catch (err) {
+      console.error("LOGIN ERROR:", err);
+
+      // backend sends JSON `{ error: "..."}`
+      if (err.response?.data?.error) {
+        setError(err.response.data.error);
+      } else {
+        setError("Network error. Please try again.");
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="page" style={{ maxWidth: 400, margin: "0 auto", padding: "2rem" }}>
