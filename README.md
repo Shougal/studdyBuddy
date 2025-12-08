@@ -1,6 +1,6 @@
 # StudyBuddy
 
-A full stack web application for coordinating university study groups. Students can browse course offerings, create groups, join groups, schedule sessions, and provide feedback.
+A full stack web application ProtoType for coordinating university study groups. Students can browse course offerings, create groups, join groups, schedule sessions, and provide feedback.
 
 The system is designed to demonstrate strong relational database design: indexing, triggers, foreign key constraints, and efficient join operations.
 
