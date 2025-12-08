@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  border-bottom: 2px solid #4a90e2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -18,4 +19,33 @@
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.user-greeting {
+  margin-right: 12px;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: #357abd;
+}
+
+.logout-btn {
+  background: #f5a623;
+}
+
+.logout-btn:hover {
+  background: #d4891c;
 }

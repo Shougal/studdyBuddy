@@ -1,93 +1,143 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { useToast } from "../components/ui/Toast";
 import api from "../services/api";
 
+const UVA_NAVY = "#232D4B";
+
 const SignUp = () => {
-  const [form, setForm] = useState({
-    computingID: "",
-    name: "",
-    year: "",
-    password: "",
-  });
-
+  const [form, setForm] = useState({ computingID: "", name: "", year: "", password: "" });
   const [error, setError] = useState("");
-  const [message, setMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const [passwordErrors, setPasswordErrors] = useState([]);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const toast = useToast();
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const validatePassword = (pwd) => {
+    const errors = [];
+    if (pwd.length < 8) errors.push("At least 8 characters");
+    if (!/[A-Z]/.test(pwd)) errors.push("One uppercase letter");
+    if (!/[a-z]/.test(pwd)) errors.push("One lowercase letter");
+    if (!/[0-9]/.test(pwd)) errors.push("One number");
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(pwd)) errors.push("One special character");
+    return errors;
+  };
+
+  const handlePasswordChange = (e) => {
+    const pwd = e.target.value;
+    setForm({ ...form, password: pwd });
+    setPasswordErrors(validatePassword(pwd));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    setMessage("");
-    setIsSubmitting(true);
 
+    const pwdErrors = validatePassword(form.password);
+    if (pwdErrors.length > 0) {
+      setError("Password does not meet requirements");
+      return;
+    }
+
+    setLoading(true);
     try {
-        const response = await api.post("/users", form);
-
-      const data = response.data;
-
-      if (data.error) {
-        setError(data.error);
-      } else if (!data.ok) {
-        setError("Could not create account.");
+      const res = await api.post("/users", { ...form, year: form.year ? Number(form.year) : null });
+      if (res.data.ok) {
+        toast.success("Account created! Please log in.");
+        navigate("/login");
       } else {
-        setMessage("Account created! Redirecting to login…");
-        setTimeout(() => navigate("/login"), 800);
+        setError(res.data.error || "Could not create account");
       }
     } catch (err) {
-      console.error(err);
-
-      if (err.response?.data?.error) {
-        setError(err.response.data.error);
+      if (err.response?.data?.error?.includes("Duplicate")) {
+        setError("This Computing ID is already registered");
       } else {
-        setError("Something went wrong. Please try again.");
+        setError(err.response?.data?.error || "Signup failed");
       }
     } finally {
-      setIsSubmitting(false);
+      setLoading(false);
     }
   };
 
+  const isPasswordValid = passwordErrors.length === 0 && form.password.length > 0;
+
   return (
-    <div className="page" style={{ maxWidth: 500, margin: "0 auto", padding: "2rem" }}>
-      <h2>Sign Up</h2>
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginTop: "1rem" }}
-      >
-        <label>
-          Computing ID
-          <input name="computingID" value={form.computingID} onChange={handleChange} required />
-        </label>
+    <div style={{ maxWidth: "380px", margin: "40px auto" }}>
+      <h2 style={{ textAlign: "center", color: UVA_NAVY, marginBottom: "24px", fontWeight: 600 }}>Create Account</h2>
+      
+      <form onSubmit={handleSubmit} style={{ background: "#fff", padding: "28px", borderRadius: "12px", boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
+        {error && <div style={{ background: "#fee", color: "#c00", padding: "12px", borderRadius: "6px", marginBottom: "16px", fontSize: "0.9rem" }}>{error}</div>}
+        
+        <div style={{ marginBottom: "16px" }}>
+          <label style={labelStyle}>Computing ID <span style={{ color: "#dc3545" }}>*</span></label>
+          <input value={form.computingID} onChange={(e) => setForm({...form, computingID: e.target.value})} required style={inputStyle} placeholder="abc1d" />
+        </div>
+        
+        <div style={{ marginBottom: "16px" }}>
+          <label style={labelStyle}>Full Name <span style={{ color: "#dc3545" }}>*</span></label>
+          <input value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} required style={inputStyle} placeholder="John Doe" />
+        </div>
+        
+        <div style={{ marginBottom: "16px" }}>
+          <label style={labelStyle}>Year</label>
+          <select value={form.year} onChange={(e) => setForm({...form, year: e.target.value})} style={inputStyle}>
+            <option value="">Select year...</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        
+        <div style={{ marginBottom: "8px" }}>
+          <label style={labelStyle}>Password <span style={{ color: "#dc3545" }}>*</span></label>
+          <input type="password" value={form.password} onChange={handlePasswordChange} required style={{
+            ...inputStyle,
+            borderColor: form.password ? (isPasswordValid ? "#28a745" : "#dc3545") : "#dee2e6"
+          }} />
+        </div>
 
-        <label>
-          Name
-          <input name="name" value={form.name} onChange={handleChange} required />
-        </label>
-
-        <label>
-          Year
-          <input type="number" name="year" value={form.year} onChange={handleChange} min="1" max="4" />
-        </label>
-
-        <label>
-          Password
-          <input type="password" name="password" value={form.password} onChange={handleChange} required />
-        </label>
-
-        <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Creating account…" : "Sign Up"}
+        {/* Password requirements */}
+        <div style={{ marginBottom: "20px", fontSize: "0.8rem" }}>
+          <div style={{ color: "#6c757d", marginBottom: "6px" }}>Password must contain:</div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px" }}>
+            <Requirement met={form.password.length >= 8}>8+ characters</Requirement>
+            <Requirement met={/[A-Z]/.test(form.password)}>Uppercase</Requirement>
+            <Requirement met={/[a-z]/.test(form.password)}>Lowercase</Requirement>
+            <Requirement met={/[0-9]/.test(form.password)}>Number</Requirement>
+            <Requirement met={/[!@#$%^&*(),.?":{}|<>]/.test(form.password)}>Special char</Requirement>
+          </div>
+        </div>
+        
+        <button type="submit" disabled={loading || !isPasswordValid} style={{
+          width: "100%",
+          padding: "14px",
+          background: (loading || !isPasswordValid) ? "#adb5bd" : UVA_NAVY,
+          color: "#fff",
+          border: "none",
+          borderRadius: "8px",
+          fontSize: "1rem",
+          fontWeight: 600,
+          cursor: (loading || !isPasswordValid) ? "not-allowed" : "pointer"
+        }}>
+          {loading ? "Creating..." : "Create Account"}
         </button>
       </form>
-
-      {error && <p style={{ color: "red", marginTop: "0.75rem" }}>{error}</p>}
-      {message && <p style={{ color: "green", marginTop: "0.75rem" }}>{message}</p>}
+      
+      <p style={{ textAlign: "center", marginTop: "20px", color: "#6c757d" }}>
+        Already have an account? <Link to="/login" style={{ color: UVA_NAVY, fontWeight: 600 }}>Log In</Link>
+      </p>
     </div>
   );
 };
+
+const Requirement = ({ met, children }) => (
+  <div style={{ color: met ? "#28a745" : "#adb5bd", display: "flex", alignItems: "center", gap: "4px" }}>
+    <span style={{ fontWeight: 600 }}>{met ? "✓" : "○"}</span> {children}
+  </div>
+);
+
+const labelStyle = { display: "block", fontWeight: 500, marginBottom: "6px", color: "#495057", fontSize: "0.9rem" };
+const inputStyle = { width: "100%", padding: "12px 14px", borderRadius: "8px", border: "1px solid #dee2e6", fontSize: "1rem", boxSizing: "border-box" };
 
 export default SignUp;
