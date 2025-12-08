@@ -42,6 +42,8 @@ const SignUp = () => {
     setLoading(true);
     try {
       const res = await api.post("/users", { ...form, year: form.year ? Number(form.year) : null });
+      console.log("SIGNUP RESPONSE:", res.data);
+
       if (res.data.ok) {
         toast.success("Account created! Please log in.");
         navigate("/login");

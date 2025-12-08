@@ -19,6 +19,7 @@ const Login = ({ onLogin }) => {
     setLoading(true);
     try {
       const res = await api.post("/login", { computingID, password });
+      console.log("Login Response:", res.data);
       if (res.data.ok) {
         toast.success("Welcome back!");
         onLogin(res.data.user || { computingID, name: computingID });

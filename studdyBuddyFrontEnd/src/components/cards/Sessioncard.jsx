@@ -49,31 +49,49 @@ const SessionCard = ({
         {ownerName && <Detail label="Host" value={ownerName} />}
       </div>
 
-      {/* Actions */}
-      <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", paddingTop: "14px", borderTop: "1px solid #e9ecef" }}>
-        <Button onClick={() => navigate(`/groups/${groupID}`)} variant="secondary">View Details</Button>
-        
-        {/* Only show Join if NOT a member and NOT owner */}
-        {showJoin && !isMember && !isOwner && (
-          <Button onClick={onJoin} variant="primary">Join Group</Button>
-        )}
+    {/* Actions */}
+    <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", paddingTop: "14px", borderTop: "1px solid #e9ecef" }}>
+    <Button onClick={() => navigate(`/groups/${groupID}`)} variant="secondary">
+        View Details
+    </Button>
 
-        {showLeave && (isMember || isOwner) && (
-          <Button onClick={onLeave} variant="danger">Leave</Button>
-        )}
+    {/* ✅ JOIN: only if NOT member and NOT owner */}
+    {!isMember && !isOwner && showJoin && (
+        <Button onClick={onJoin} variant="primary">
+        Join Group
+        </Button>
+    )}
 
-        {showDelete && isOwner && (
-          <Button onClick={onDelete} variant="danger">Delete</Button>
-        )}
+    {/* ✅ ENROLLED badge handled visually already — no button */}
 
-        {showFeedback && isPast && !isOwner && (
-          <Button onClick={onFeedback} variant="success">Give Feedback</Button>
-        )}
+    {/* ✅ LEAVE: only if member AND NOT owner */}
+    {isMember && !isOwner && showLeave && (
+        <Button onClick={onLeave} variant="danger">
+        Leave
+        </Button>
+    )}
 
-        {showViewFeedback && isPast && isOwner && (
-          <Button onClick={onViewFeedback} variant="purple">View Feedback</Button>
-        )}
-      </div>
+    {/* ✅ DELETE: only if owner */}
+    {isOwner && showDelete && (
+        <Button onClick={onDelete} variant="danger">
+        Delete
+        </Button>
+    )}
+
+    {/* ✅ Feedback rules unchanged */}
+    {showFeedback && isPast && !isOwner && (
+        <Button onClick={onFeedback} variant="success">
+        Give Feedback
+        </Button>
+    )}
+
+    {showViewFeedback && isPast && isOwner && (
+        <Button onClick={onViewFeedback} variant="purple">
+        View Feedback
+        </Button>
+    )}
+    </div>
+
     </div>
   );
 };

@@ -100,7 +100,7 @@ const Home = ({ user }) => {
               ownerName={s.owner_name}
               isOwner={s.isOwner}
               isMember={true}
-              showLeave={true}
+              showLeave={!s.isOwner}
               showDelete={s.isOwner}
               onLeave={() => handleLeave(s)}
               onDelete={() => handleDelete(s)}
