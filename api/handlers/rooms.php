@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../../config/connect-db.php';
 require_once __DIR__ . '/../../queries/locations.php';
+require_once __DIR__ . '/../../api/middleware.php'; 
 
 header("Content-Type: application/json");
 
@@ -21,6 +22,12 @@ if ($method === "POST" && preg_match("#/rooms$#", $uri)) {
     $building = $body["building"] ?? null;
     $room = $body["room"] ?? null;
     $capacity = $body["capacity"] ?? null;
+
+    if ($_SESSION['computingID'] !== 'xdq9qa') {
+        http_response_code(403);
+        echo json_encode(["error" => "Only admin can create locations"]);
+        exit;
+    }
 
     if (!$building || !$room || !$capacity) {
         error_log("Missing fields in room creation");
