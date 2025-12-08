@@ -23,10 +23,12 @@ const Home = ({ user }) => {
       setLoading(true);
       const res = await api.get(`/users/${user.computingID}/groups`);
       const groups = res.data || [];
+      
       const now = new Date();
       const upcoming = [], past = [];
 
       groups.forEach(g => {
+        
         const isOwner = g.owner_computingID === user.computingID;
         const enriched = { ...g, isOwner };
         if (g.date && g.end_time) {

@@ -58,8 +58,6 @@ const CreateGroup = ({ user }) => {
       if (!groupRes.data.ok) throw new Error(groupRes.data.error);
       const groupID = groupRes.data.groupID;
 
-      // Auto-join owner
-      try { await api.post(`/groups/${groupID}/join`, { computingID: user.computingID }); } catch {}
 
       const sessionRes = await api.post(`/groups/${groupID}/session`, { date: form.date, start: form.start_time, end: form.end_time, building: form.building, room: form.room_number });
       if (!sessionRes.data.ok) throw new Error(sessionRes.data.error);

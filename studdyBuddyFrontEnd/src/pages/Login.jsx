@@ -19,10 +19,22 @@ const Login = ({ onLogin }) => {
     setLoading(true);
     try {
       const res = await api.post("/login", { computingID, password });
-      console.log("Login Response:", res.data);
       if (res.data.ok) {
-        toast.success("Welcome back!");
-        onLogin(res.data.user || { computingID, name: computingID });
+        // Try to get user details including name
+        let userData = { computingID, name: computingID };
+        try {
+          const userRes = await api.get(`/users/${computingID}`);
+          if (userRes.data) {
+            userData = { 
+              computingID, 
+              name: userRes.data.name || computingID,
+              year: userRes.data.year 
+            };
+          }
+        } catch {}
+        
+        toast.success(`Welcome back, ${userData.name}!`);
+        onLogin(userData);
         navigate("/");
       } else {
         setError(res.data.error || "Invalid credentials");

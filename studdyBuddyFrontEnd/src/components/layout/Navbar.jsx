@@ -40,10 +40,10 @@ const Navbar = ({ onLogout, user }) => {
         <Link to="/schedule"><button style={navBtn}>My Courses</button></Link>
         <Link to="/groups"><button style={navBtn}>Find Groups</button></Link>
         <Link to="/create-group"><button style={{...navBtn, background: UVA_ORANGE}}>Create Group</button></Link>
-        
-        <button onClick={handleLogout} style={{...navBtn, background: "transparent", border: "1px solid rgba(255,255,255,0.5)"}}>
+        <button className="nav-btn logout-btn" onClick={handleLogout}>
           Logout
         </button>
+
       </div>
     </nav>
   );

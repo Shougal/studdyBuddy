@@ -20,9 +20,13 @@ const GroupDetails = ({ user }) => {
   }, [groupID, user]);
 
   const fetchGroup = async () => {
-    try { setGroup((await api.get(`/groups/${groupID}`)).data); }
-    catch { toast.error("Could not load group"); }
-    finally { setLoading(false); }
+    try { 
+      setGroup((await api.get(`/groups/${groupID}`)).data); 
+    } catch { 
+      toast.error("Could not load group"); 
+    } finally { 
+      setLoading(false); 
+    }
   };
 
   const checkMembership = async () => {
@@ -32,22 +36,15 @@ const GroupDetails = ({ user }) => {
     } catch {}
   };
 
-  const handleJoin = async () => {
-    try {
-      await api.post(`/groups/${groupID}/join`, { computingID: user.computingID });
-      toast.success("Joined group successfully");
-      setIsMember(true);
-      fetchGroup();
-    } catch { toast.error("Could not join group"); }
-  };
-
   const handleLeave = async () => {
     try {
       await api.post(`/groups/${groupID}/leave`, { computingID: user.computingID });
       toast.success("Left group");
       setIsMember(false);
       fetchGroup();
-    } catch { toast.error("Could not leave group"); }
+    } catch { 
+      toast.error("Could not leave group"); 
+    }
   };
 
   if (loading) return <div style={{ textAlign: "center", padding: "60px", color: "#6c757d" }}>Loading...</div>;
@@ -101,17 +98,12 @@ const GroupDetails = ({ user }) => {
           <DetailItem label="Time" value={`${formatTime(group.start_time)} - ${formatTime(group.end_time)}`} />
           <DetailItem label="Location" value={`${group.building || "TBD"} ${group.room_number || ""}`} />
           <DetailItem label="Members" value={group.members || 0} />
-          <DetailItem label="Host" value={group.owner_name} />
+          <DetailItem label="Host" value={group.owner_name || "Unknown"} />
           <DetailItem label="Term" value={group.term} />
         </div>
 
         {/* Actions */}
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", paddingTop: "20px", borderTop: "1px solid #e9ecef" }}>
-          {/* Only show Join if NOT a member and NOT owner and NOT past */}
-          {!isOwner && !isMember && !isPast && (
-            <Button onClick={handleJoin} variant="primary">Join Group</Button>
-          )}
-          
           {/* Show Leave if member or owner */}
           {(isMember || isOwner) && !isPast && (
             <Button onClick={handleLeave} variant="danger">Leave Group</Button>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastProvider } from "./components/ui/Toast";
 import Navbar from "./components/layout/Navbar";
@@ -16,14 +16,24 @@ import SignUp from "./pages/SignUp";
 function App() {
   const [user, setUser] = useState(null);
 
+  // ✅ Restore login on refresh
+  useEffect(() => {
+    const saved = localStorage.getItem("user");
+    if (saved) {
+      setUser(JSON.parse(saved));
+    }
+  }, []);
+
+  // ✅ Login handler
   const handleLogin = (userData) => {
-    console.log("User logged in:", userData);
     setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
   };
 
+  // ✅ Logout handler
   const handleLogout = () => {
-    console.log("User logged out");
     setUser(null);
+    localStorage.removeItem("user");
   };
 
   return (
