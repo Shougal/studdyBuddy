@@ -1,4 +1,8 @@
+Options +FollowSymLinks
 RewriteEngine On
+
+# Forward ALL requests inside /studdybuddy/api/ to index.php
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^.\*$ index.php [QSA,L]

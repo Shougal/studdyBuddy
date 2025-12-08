@@ -1,47 +1,59 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Button from "./components/buttons/Button";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastProvider } from "./components/ui/Toast";
 import Navbar from "./components/layout/Navbar";
-import StudyGroupCard from "./components/cards/studyGroupCard";
-import Input from "./components/forms/Input";
-import UserForm from "./components/forms/UserForm";
-import { CreateGroup } from "./pages/CreateGroup";
 
+import Landing from "./pages/Landing";
+import Home from "./pages/Home";
+import CreateGroup from "./pages/CreateGroup";
+import FindGroups from "./pages/FindGroups";
+import UserSchedule from "./pages/UserSchedule";
+import GroupDetails from "./pages/Groupdetails";
+import Feedback from "./pages/Feedback";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [user, setUser] = useState(null);
+
+  // ✅ Restore login on refresh
+  useEffect(() => {
+    const saved = localStorage.getItem("user");
+    if (saved) {
+      setUser(JSON.parse(saved));
+    }
+  }, []);
+
+  // ✅ Login handler
+  const handleLogin = (userData) => {
+    setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
+  };
+
+  // ✅ Logout handler
+  const handleLogout = () => {
+    setUser(null);
+    localStorage.removeItem("user");
+  };
 
   return (
-    <>
-      <Navbar />
-      <Button
-        label="Hey there"
-        size="medium"
-        variant="primary"
-        onClick={() => console.log("clicked")}
-      />
-      <StudyGroupCard
-        date="nov 6"
-        mnemonic="cs3130"
-        building="rice"
-        start_time="9 am"
-        end_time="12pm"
-        capacity="2"
-        members="10"
-        onJoin={() => console.log("joined!")}
-      />
-      <div>
-        <section>
-          <UserForm />
-        </section>
-      </div>
-      <div>
-        <CreateGroup />
-
-      </div>
-    </>
+    <ToastProvider>
+      <Router>
+        <Navbar onLogout={handleLogout} user={user} />
+        <div style={{ padding: "24px 32px", background: "#f8f9fa", minHeight: "calc(100vh - 64px)" }}>
+          <Routes>
+            <Route path="/" element={user ? <Home user={user} /> : <Landing />} />
+            <Route path="/groups" element={<FindGroups user={user} />} />
+            <Route path="/groups/:groupID" element={<GroupDetails user={user} />} />
+            <Route path="/create-group" element={<CreateGroup user={user} />} />
+            <Route path="/schedule" element={<UserSchedule user={user} />} />
+            <Route path="/feedback/:groupID" element={<Feedback user={user} />} />
+            <Route path="/login" element={<Login onLogin={handleLogin} />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
+        </div>
+      </Router>
+    </ToastProvider>
   );
 }
 

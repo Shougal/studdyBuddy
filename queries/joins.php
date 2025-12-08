@@ -53,15 +53,31 @@ function db_is_member(string $computingID, int $groupID): bool {
  */
 function db_my_groups(string $computingID): array {
   global $conn;
-  $sql = "SELECT g.groupID, c.mnemonic_num, c.name AS course_name,
-                 s.date, s.start_time, s.end_time, s.building, s.room_number,
-                 g.description
-          FROM Joins j
-          JOIN StudyGroup g ON g.groupID = j.groupID
-          JOIN Course c     ON c.mnemonic_num = g.mnemonic_num
-          LEFT JOIN `Session` s ON s.groupID = g.groupID
-          WHERE j.computingID = ?
-          ORDER BY s.date, s.start_time";
+
+  $sql = "
+    SELECT 
+      g.groupID,
+      g.owner_computingID,
+      g.term,
+      g.mnemonic_num,
+      c.name AS course_name,
+      g.description,
+      s.date,
+      s.start_time,
+      s.end_time,
+      s.building,
+      s.room_number,
+      u.name AS owner_name,
+      (SELECT COUNT(*) FROM Joins WHERE groupID = g.groupID) AS members
+    FROM Joins j
+    JOIN StudyGroup g ON g.groupID = j.groupID
+    JOIN Course c ON c.mnemonic_num = g.mnemonic_num
+    LEFT JOIN Session s ON s.groupID = g.groupID
+    LEFT JOIN User u ON u.computingID = g.owner_computingID
+    WHERE j.computingID = ?
+    ORDER BY s.date, s.start_time
+  ";
+
   $st = $conn->prepare($sql);
   $st->execute([$computingID]);
   return $st->fetchAll();

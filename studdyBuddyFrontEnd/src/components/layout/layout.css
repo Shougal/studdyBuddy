@@ -1,14 +1,50 @@
 .navbar {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  padding: 12px 24px;
+  background-color: #fff;
+  border-bottom: 2px solid #4a90e2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #4a90e2;
-  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.user-greeting {
+  margin-right: 12px;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #357abd;
+}
+
+.logout-btn {
+  background: #f5a623;
+}
+
+.logout-btn:hover {
+  background: #d4891c;
 }
