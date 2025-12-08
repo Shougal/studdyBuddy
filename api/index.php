@@ -1,10 +1,24 @@
 <?php
 
 // CORS settings for React dev server
-header("Access-Control-Allow-Origin: http://localhost:5174");
+
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+$allowed_origins = [
+    'http://localhost:5174',
+    'https://www.cs.virginia.edu',
+    'https://www.cs.virginia.edu/~xdq9qa',
+];
+
+if (in_array($origin, $allowed_origins)) {
+    header("Access-Control-Allow-Origin: $origin");
+}
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Methods: GET, POST, PATCH, DELETE, OPTIONS");
+
+
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     // Preflight requests end here
@@ -16,42 +30,51 @@ $method = $_SERVER['REQUEST_METHOD'];
 $uri    = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 
-$basePrefix = '/studdybuddy/api';
+$basePrefix = '/~xdq9qa/api';
+
+
 // Simple routing:
+
+if ($uri === "$basePrefix/debug") {
+    header('Content-Type: application/json');
+    echo json_encode(["router" => "OK"]);
+    exit;
+}
+
 
 // 1) Create user (register)
 if ($method === 'POST' && $uri === "$basePrefix/users") {
-    require __DIR__ . '/handlers/users/create.php';
+    require __DIR__ . '/studdybuddy/api/handlers/users/create.php';
     exit;
 }
 
 // 2) Login
 if ($method === 'POST' && $uri === "$basePrefix/login") {
-    require __DIR__ . '/handlers/users/login.php';
+    require __DIR__ . '/studdybuddy/api/handlers/users/login.php';
     exit;
 }
 
 // 3) Logout
 if ($method === 'POST' && $uri === "$basePrefix/logout") {
-    require __DIR__ . '/handlers/users/logout.php';
+    require __DIR__ . '/studdybuddy/api/handlers/users/logout.php';
     exit;
 }
 
 // 4) Public profile: GET /api/users/:computingID
 if ($method === 'GET' && preg_match("#^{$basePrefix}/users/([^/]+)$#", $uri, $matches)) {
     $computingID = $matches[1];
-    require __DIR__ . '/handlers/users/profile.php';
+    require __DIR__ . '/studdybuddy/api/handlers/users/profile.php';
     exit;
 }
 
 // COURSE OFFERINGS
 if ($uri === "$basePrefix/offerings") {
-    require_once __DIR__ . "/handlers/offering.php";
+    require_once __DIR__ . "/studdybuddy/api/handlers/offering.php";
     exit;
 }
 
 if ($uri === "$basePrefix/enroll") {
-    require_once __DIR__ . "/handlers/offering.php";
+    require_once __DIR__ . "/studdybuddy/api/handlers/offering.php";
     exit;
 }
 
@@ -61,34 +84,34 @@ if ($uri === "$basePrefix/enroll") {
 
 // 1️)POST /api/groups   — Create group
 if ($method === 'POST' && $uri === "$basePrefix/groups") {
-    require __DIR__ . '/handlers/groups.php';
+    require __DIR__ . '/studdybuddy/api/handlers/groups.php';
     exit;
 }
 
 // 2)GET /api/groups     — Search groups (no ID in path)
 if ($method === 'GET' && $uri === "$basePrefix/groups") {
-    require __DIR__ . '/handlers/groups.php';
+    require __DIR__ . '/studdybuddy/api/handlers/groups.php';
     exit;
 }
 
 // 3️)GET /api/groups/:id — Group details
 if ($method === 'GET' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . '/handlers/groups.php';
+    require __DIR__ . '/studdybuddy/api/handlers/groups.php';
     exit;
 }
 
 // 4) PATCH /api/groups/:id — Update description (owner only)
 if ($method === 'PATCH' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . '/handlers/groups.php';
+    require __DIR__ . '/studdybuddy/api/handlers/groups.php';
     exit;
 }
 
 // 5️) DELETE /api/groups/:id — Delete group (owner only)
 if ($method === 'DELETE' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . '/handlers/groups.php';
+    require __DIR__ . '/studdybuddy/api/handlers/groups.php';
     exit;
 }
 
@@ -98,28 +121,28 @@ if ($method === 'DELETE' && preg_match("#^{$basePrefix}/groups/(\d+)$#", $uri, $
 // Join group
 if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/join$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . "/handlers/membership.php";
+    require __DIR__ . "/studdybuddy/api/handlers/membership.php";
     exit;
 }
 
 // Leave group
 if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/leave$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . "/handlers/membership.php";
+    require __DIR__ . "/studdybuddy/api/handlers/membership.php";
     exit;
 }
 
 // Is member?
 if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/isMember$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . "/handlers/membership.php";
+    require __DIR__ . "/studdybuddy/api/handlers/membership.php";
     exit;
 }
 
 // User's group list
 if ($method === "GET" && preg_match("#^{$basePrefix}/users/([^/]+)/groups$#", $uri, $matches)) {
     $_GET['computingID'] = $matches[1];
-    require __DIR__ . "/handlers/membership.php";
+    require __DIR__ . "/studdybuddy/api/handlers/membership.php";
     exit;
 }
 
@@ -129,13 +152,13 @@ if ($method === "GET" && preg_match("#^{$basePrefix}/users/([^/]+)/groups$#", $u
 
 // Create room (admin tool)
 if ($method === "POST" && $uri === "$basePrefix/rooms") {
-    require __DIR__ . "/handlers/rooms.php";
+    require __DIR__ . "/studdybuddy/api/handlers/rooms.php";
     exit;
 }
 
 // Find available rooms
 if ($method === "GET" && $uri === "$basePrefix/rooms/free") {
-    require __DIR__ . "/handlers/rooms.php";
+    require __DIR__ . "/studdybuddy/api/handlers/rooms.php";
     exit;
 }
 
@@ -146,38 +169,38 @@ if ($method === "GET" && $uri === "$basePrefix/rooms/free") {
 // Create session for group
 if ($method === "POST" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . "/handlers/sessions.php";
+    require __DIR__ . "/studdybuddy/api/handlers/sessions.php";
     exit;
 }
 
 // Reschedule session
 if ($method === "PATCH" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . "/handlers/sessions.php";
+    require __DIR__ . "/studdybuddy/api/handlers/sessions.php";
     exit;
 }
 
 // Get session info
 if ($method === "GET" && preg_match("#^{$basePrefix}/groups/(\d+)/session$#", $uri, $matches)) {
     $_GET['groupID'] = intval($matches[1]);
-    require __DIR__ . "/handlers/sessions.php";
+    require __DIR__ . "/studdybuddy/api/handlers/sessions.php";
     exit;
 }
 
 // SURVEY 
 if ($method === 'GET' && $uri === "$basePrefix/survey/questions") {
-    require __DIR__ . "/handlers/survey/questions.php";
+    require __DIR__ . "/studdybuddy/api/handlers/survey/questions.php";
     exit;
 }
 
 if ($method === 'POST' && $uri === "$basePrefix/survey/feedback") {
-    require __DIR__ . "/handlers/survey/feedback.php";
+    require __DIR__ . "/studdybuddy/api/handlers/survey/feedback.php";
     exit;
 }
 
 if ($method === 'GET' && preg_match("#^{$basePrefix}/survey/groups/(\d+)/summary$#", $uri, $m)) {
     $groupID = (int)$m[1];
-    require __DIR__ . "/handlers/survey/summary.php";
+    require __DIR__ . "/studdybuddy/api/handlers/survey/summary.php";
     exit;
 }
 
